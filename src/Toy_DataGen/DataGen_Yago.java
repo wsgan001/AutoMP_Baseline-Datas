@@ -173,7 +173,7 @@ public class DataGen_Yago {
 			{
 				Integer de = 0;
 				if(depth.containsKey(p))de = depth.get(p);
-				if(de > dep && de <= 3)
+				if(de > dep && de <= 2)
 				{
 					dep = de;
 					ret = p;
@@ -312,20 +312,17 @@ public class DataGen_Yago {
             TypeHash.put(tp, TypeCnt);
             TypeCnt ++;
         }
-        if(SampleTypes.contains(tp))
+        Paths.add((ArrayList<Integer>) pt.clone());
+        if (!Node2Path.containsKey(node))
         {
-            Paths.add((ArrayList<Integer>) pt.clone());
-            if (!Node2Path.containsKey(node))
-            {
-                ArrayList<Integer> tmp = new ArrayList<Integer>();
-                tmp.clear();
-                Node2Path.put(node, tmp);
-            }
-            ArrayList<Integer> now = (ArrayList<Integer>) Node2Path.get(node).clone();
-            Integer label = Paths.size() - 1;
-            now.add(label);
-            Node2Path.put(node, now);
+            ArrayList<Integer> tmp = new ArrayList<Integer>();
+            tmp.clear();
+            Node2Path.put(node, tmp);
         }
+        ArrayList<Integer> now = (ArrayList<Integer>) Node2Path.get(node).clone();
+        Integer label = Paths.size() - 1;
+        now.add(label);
+        Node2Path.put(node, now);
         if(SampleTypes.contains(tp) && !NegaSamples.contains(node)) NegaSamples.add( node );
 
         if(!graph.G.containsKey(node) || len >= RandPathLen)
@@ -452,6 +449,8 @@ public class DataGen_Yago {
                 NodeFW.close();
 
                 for(Integer p : NegaSamples) if( p != cent && !Samples.contains(p) ) NegaShuf.add(p);
+                for(Integer p : Samples) if(!NodeHash.containsKey(p)) { Samples.remove(p); SamplesFlag = false; }
+                if(!SamplesFlag) System.out.println("Fuck!!!");
 
                 //Statistics
                 Sta_Nodes += NodeCnt;
@@ -473,11 +472,7 @@ public class DataGen_Yago {
                 {
                     Integer CYCnt = 0;
                     trainsamples.clear();
-                    while(trainsamples.size() < trainnum)
-                    {
-                        Integer tt = rd.nextInt(Samples.size());
-                        if(!trainsamples.contains( Samples.get(tt) )) trainsamples.add( Samples.get(tt) );
-                    }
+                    for(Integer k = 0; k < trainnum; ++k) trainsamples.add( Samples.get( k ) );
 
                     Integer everysample = TrainLines / trainnum;
                     String trainfold = foldn + "dbpedia.splits/train." + trainnum.toString() + "/";
@@ -504,9 +499,9 @@ public class DataGen_Yago {
                                 if(trainnum <= 5)
                                 {
                                     tmp_Nodes_Train ++;
-                                    System.out.print("Train Sample : " + trainsamples.get( label - 1 ));
-                                    if(!Node2Path.containsKey(trainsamples.get( label - 1 ))) System.out.print("  NodeHash : " + NodeHash.get( trainsamples.get( label - 1 ) ));
-                                    System.out.println();
+                                    //System.out.print("Train Sample : " + trainsamples.get( label - 1 ));
+                                    //if(!Node2Path.containsKey(trainsamples.get( label - 1 ))) System.out.print("  NodeHash : " + NodeHash.get( trainsamples.get( label - 1 ) ));
+                                    //System.out.println();
                                     tmp_Paths_Train += Node2Path.get( trainsamples.get( label - 1 ) ).size();
                                 }
                                 WriteCY( trainsamples.get( label - 1 ), CYfw );

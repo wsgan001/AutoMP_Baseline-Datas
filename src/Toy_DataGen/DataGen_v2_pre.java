@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class DataGen_DBpedia {
+public class DataGen_v2_pre {
 
 	private static Integer RandPathLen = 0;
 	private static Integer TrainLim = 0;
@@ -19,14 +19,13 @@ public class DataGen_DBpedia {
 	private static Integer TrainLines = 0;
     private static Integer CYLim = 0;
 
-	private static SimpleDateFormat mat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
-	private static String[] tmp = new String[105];
-	private static Integer testcase = 0;
+    private static SimpleDateFormat mat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
+    private static String[] tmp = new String[105];
+    private static Integer testcase = 0;
     private static Map<Integer, Integer> NodeType = new HashMap<Integer, Integer>();
-    private static Integer MaxEntityNumber = 3480806;
+    private static final Integer MaxEntityNumber = 3480806;
     private static DecimalFormat decifm=new DecimalFormat("#.000000");
-    private static FileWriter Sta_FW;
-
+	
 	static {
         try {
             // 加载dbinfo.properties配置文件
@@ -136,14 +135,14 @@ public class DataGen_DBpedia {
 		
 	}
 
-	private static ArrayList<Integer>[] ty = new ArrayList[15000005];
+	private static ArrayList<Integer>[] ty = new ArrayList[3500005];
 
 	private static void GetNodeInformation()
 	{
         DecimalFormat fm=new DecimalFormat("#.000000");
 		NodeType.clear();
 		Integer cnt = 0;
-		for(Integer i=0; i<=15000000; ++i)ty[i] = new ArrayList<Integer>();
+		for(Integer i=0; i<=3500000; ++i)ty[i] = new ArrayList<Integer>();
 		String sql = "SELECT * FROM typesinfos;";
 		try {
 			PreparedStatement ps = JdbcUtil.getConnection().prepareStatement(sql);
@@ -153,18 +152,13 @@ public class DataGen_DBpedia {
 				Integer ent = rs.getInt("entity");
 				Integer typ = rs.getInt("type");
 				ty[ent].add(typ);
-				cnt ++; MaxEntityNumber = Math.max(ent, MaxEntityNumber);
+				cnt ++;
 			}
 			rs.close();ps.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-        Map<Integer, Integer> typehash = new HashMap<Integer, Integer>(); typehash.clear();
-        Integer typehashcnt = 0;
-
-        //System.out.println(MaxEntityNumber);
 
         for(Integer i=1; i<=MaxEntityNumber; ++i)
 		{
@@ -180,16 +174,9 @@ public class DataGen_DBpedia {
 				}
 			}
 			NodeType.put(i, ret);
-			if(!typehash.containsKey(ret))
-            {
-                typehash.put(ret, typehashcnt);
-				typehashcnt ++;
-            }
 		}
 
-		CreateFolder("./datas/toys/toydata/");
-
-        System.out.println("GetNodeInformation End!\tAll : " + cnt + "\t" + mat.format(new Date()));
+        //System.out.println("GetNodeInformation End!\tAll : " + cnt + "\t" + mat.format(new Date()));
 	}
 
 	public static void PreSolveFile(String filename)
@@ -216,11 +203,7 @@ public class DataGen_DBpedia {
 				if(str.length() > 0)
 				{
 					tmp = str.split("\t");
-					for(Integer i=0; i<tmp.length; ++i)
-                    {
-                        Integer pos=tmp[i].indexOf(':');
-                        fw.write(tmp[i].substring(0,pos) + " ");
-                    }
+					for(Integer i=0; i<tmp.length; ++i)fw.write(tmp[i] + " ");
 				}
 				fw.close();
 			}
@@ -235,65 +218,29 @@ public class DataGen_DBpedia {
 		}
 	}
 
-    private static Map<Integer, Integer> NodeHash = new HashMap<Integer, Integer>();
-    private static Map<Integer, Integer> TypeHash = new HashMap<Integer, Integer>();
-    private static ArrayList<Integer> Nodes = new ArrayList<Integer>();
-    private static Integer NodeCnt = 0;
+	private static Map<Integer, Integer> NodeHash = new HashMap<Integer, Integer>();
+	private static ArrayList<Integer> Nodes = new ArrayList<Integer>();
+	private static Integer NodeCnt = 0;
     private static Integer TypeCnt = 0;
+	private static Set<Integer> HasWalked = new HashSet<Integer>();
+	private static ArrayList<Integer> NodeList = new ArrayList<Integer>();
+	private static Set<Integer> SampleTypes = new HashSet<Integer>();
+    private static ArrayList<Integer> Samples = new ArrayList<Integer>();
+    private static ArrayList<Integer> trainsamples = new ArrayList<Integer>();
+    private static Set<Integer> nega = new HashSet<Integer>();
+    private static Set<Integer> alrcho = new HashSet<Integer>();
+    private static Map<Integer, Integer> TypeHash = new HashMap<Integer, Integer>();
+    private static Set<Integer> AlreadyOutput = new HashSet<Integer>();
     private static Map<Integer, ArrayList<Integer> > Node2Path = new HashMap<Integer, ArrayList<Integer> >();
     private static ArrayList< ArrayList<Integer> > Paths = new ArrayList< ArrayList<Integer> >();
-    private static ArrayList<Integer> NegaSamples = new ArrayList<Integer>();
-    private static Set<Integer> HasWalked = new HashSet<Integer>();
-    private static Set<Integer> SampleTypes = new HashSet<Integer>();
-    private static ArrayList<Integer> Samples = new ArrayList<Integer>();
-    private static Set<Integer> AllTypes = new HashSet<Integer>();
-    private static ArrayList<Integer> trainsamples = new ArrayList<Integer>();
-    private static List<Integer> NegaShuf = new ArrayList<Integer>();
-    private static Integer CYCnt = 0;
 
-    private static void ClearMem()
+	private static void ClearMem()
     {
         NodeHash.clear(); Nodes.clear(); NodeCnt = 0;
-        TypeHash.clear(); TypeCnt = 0; AllTypes.clear();
+        SampleTypes.clear(); Samples.clear();
+        TypeHash.clear(); TypeCnt = 0;
+        AlreadyOutput.clear(); HasWalked.clear();
         Node2Path.clear(); Paths.clear();
-        NegaSamples.clear(); SampleTypes.clear(); Samples.clear(); trainsamples.clear();
-        NegaShuf.clear();
-    }
-
-    private static void WriteCY(Integer node, FileWriter tmpfw)
-    {
-        try {
-            ArrayList<Integer> pathlabels = Node2Path.get( node );
-            Collections.shuffle(pathlabels);
-            Integer num = (pathlabels.size() + 1) / 2;
-            for(Integer llb = 0; llb < num; ++llb)
-            {
-                Integer lb = pathlabels.get(llb);
-                CYCnt ++;
-                ArrayList<Integer> nl = Paths.get(lb);
-                if(nl.size() <= 1)
-                {
-                    tmpfw.write(nl.get(0).toString() + "\t" + nl.get(0).toString() + "\t");
-                    tmpfw.write(nl.get(0).toString() + " " + nl.get(0).toString() + " ");
-                    tmpfw.write("\r\n"); continue;
-                }
-                if(CYCnt % 2 == 0)
-                {
-                    tmpfw.write(nl.get(nl.size() - 1).toString() + "\t" + nl.get(0).toString() + "\t");
-                    for(Integer id = nl.size() - 1; id >= 0; -- id)tmpfw.write(nl.get(id).toString() + " ");
-                    tmpfw.write("\r\n");
-                }
-                else
-                {
-                    tmpfw.write(nl.get(0).toString() + "\t" + nl.get(nl.size() - 1).toString() + "\t");
-                    for(Integer id = 0; id < nl.size(); ++ id)tmpfw.write(nl.get(id).toString() + " ");
-                    tmpfw.write("\r\n");
-                }
-            }
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
     }
 
     private static void GetSubGraph(Integer node, Integer len, ArrayList<Integer> path)
@@ -312,11 +259,10 @@ public class DataGen_DBpedia {
             TypeHash.put(tp, TypeCnt);
             TypeCnt ++;
         }
-        if(SampleTypes.contains(tp))
+        if (Samples.contains(node))
         {
             Paths.add((ArrayList<Integer>) pt.clone());
-            if (!Node2Path.containsKey(node))
-            {
+            if (!Node2Path.containsKey(node)) {
                 ArrayList<Integer> tmp = new ArrayList<Integer>();
                 tmp.clear();
                 Node2Path.put(node, tmp);
@@ -326,7 +272,6 @@ public class DataGen_DBpedia {
             now.add(label);
             Node2Path.put(node, now);
         }
-        if(SampleTypes.contains(tp) && !NegaSamples.contains(node)) NegaSamples.add( node );
 
         if(!graph.G.containsKey(node) || len >= RandPathLen)
         {
@@ -344,6 +289,59 @@ public class DataGen_DBpedia {
         }
 
         HasWalked.remove(node);
+    }
+
+	private static Integer FindPath(Integer now, ArrayList<Integer> PT, Integer len)
+	{
+		ArrayList<Integer> pt = (ArrayList<Integer>) PT.clone();
+		if(!NodeHash.containsKey(now))
+        {
+            NodeHash.put(now, NodeCnt);
+            Nodes.add(now);
+            NodeCnt ++;
+        }
+        Integer tp=NodeType.get(now);
+        if(!TypeHash.containsKey(tp))
+        {
+            TypeHash.put(tp, TypeCnt);
+            TypeCnt ++;
+        }
+		pt.add( NodeHash.get(now) ); HasWalked.add(now);
+		if( SampleTypes.contains(tp) && len > 0) { NodeList = (ArrayList<Integer>) pt.clone(); return now;}
+		if(len >= RandPathLen)  return -1;
+		HashMap<Integer, List<Integer>> outs = graph.G.get(now);
+        ArrayList<Integer> otnd = new ArrayList<Integer>(); otnd.clear();
+        for(Map.Entry<Integer, List<Integer>> kv : outs.entrySet())
+        {
+            List<Integer> outnode = kv.getValue();
+            for(Integer p : outnode) if(!HasWalked.contains(p))otnd.add(p);
+        }
+		Random rd = new Random();
+		Integer sz = otnd.size();
+		if(sz <= 0)return -1;
+		Integer label = rd.nextInt(sz);
+		return FindPath(otnd.get(label), pt, len + 1);
+	}
+
+    private static void WriteCY(ArrayList<Integer> nl, FileWriter tmpfw, Integer reverse)
+    {
+        try {
+            if(reverse == 0)
+            {
+                tmpfw.write(nl.get(nl.size() - 1).toString() + "\t" + nl.get(0).toString() + "\t");
+                for(Integer id = nl.size() - 1; id >= 0; -- id)tmpfw.write(nl.get(id).toString() + " ");
+                tmpfw.write("\r\n");
+            }
+            else
+            {
+                tmpfw.write(nl.get(0).toString() + "\t" + nl.get(nl.size() - 1).toString() + "\t");
+                for(Integer id = 0; id < nl.size(); ++ id)tmpfw.write(nl.get(id).toString() + " ");
+                tmpfw.write("\r\n");
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     private static void GetDegAndEntro(Integer node, FileWriter fw)
@@ -395,15 +393,9 @@ public class DataGen_DBpedia {
             FileWriter countfw = new FileWriter(new File("./datas/toys/toydata/" + foldname + "/count.txt"));
             countfw.write(testcase.toString() + "\r\n");
             countfw.close();
-            Sta_FW.write(foldname + " : \r\n\r\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Integer Sta_Nodes = 0;
-        Integer Sta_Types = 0;
-        Integer Sta_Paths = 0;
-        double Sta_PathperEnt = 0;
-        double Sta_PathperEnt_Train = 0;
 		for(Integer i=1; i<=testcase; ++i)
 		{
 			System.out.println("Case : " + i.toString() + "  Begin!" + "\t" + mat.format(new Date()));
@@ -416,8 +408,6 @@ public class DataGen_DBpedia {
 
 			Random rd = new Random();
 			try {
-			    Sta_FW.write("Case " + i.toString() + " : ");
-
 				InputStream is = new FileInputStream("./datas/toys/toyin/" + i.toString() + ".sam");
 				Scanner sc = new Scanner(is);
 				cent = sc.nextInt();
@@ -425,53 +415,31 @@ public class DataGen_DBpedia {
 				CreateFolder(foldn + "/dbpedia/");
 				FileWriter CYfw = new FileWriter(foldn + "/dbpedia/subpathsSaveFile");
 
+				//Samples
 				Boolean SamplesFlag = true;
-				while(sc.hasNextInt()) {
-                    Integer p = sc.nextInt();
-                    Samples.add(p);
-                    SampleTypes.add(NodeType.get(p));
-                }
+				while(sc.hasNextInt())
+				{
+					Integer p = sc.nextInt();
+					Samples.add(p);
+					SampleTypes.add( NodeType.get(p) );
+				}
+				//System.out.println("Sampls End!" + "  " + Samples.size() + "\t" + mat.format(new Date()));
 				sc.close();is.close();
+
+                ArrayList<Integer> pth = new ArrayList<Integer>(); pth.clear();
+                GetSubGraph(cent, 0, pth);
+
+                for(Integer p : Samples)
+                    if(!NodeHash.containsKey(p))Samples.remove(p);
 
                 CreateFolder(foldn + "dbpedia.splits/");
                 CreateFolder(foldn + "dbpedia.trainModels/");
 
-                ArrayList<Integer> pt = new ArrayList<Integer>(); pt.clear();
-                HasWalked.clear(); GetSubGraph(cent, 0, pt);
-
-                FileWriter NodeFW = new FileWriter(new File( foldn + "/dbpedia/nodefeatures" ));
-                Integer dimen = 2 * (TypeCnt + 1);
-                NodeFW.write(NodeCnt.toString() + " " + dimen.toString() + "\r\n");
-                for(Integer nodeid = 0; nodeid < NodeCnt; nodeid ++)
-                {
-                    Integer node = Nodes.get(nodeid);
-                    NodeFW.write(nodeid.toString() + " " + TypeHash.get( NodeType.get( node ) ).toString() + " ");
-                    GetDegAndEntro(node, NodeFW);
-                    NodeFW.write("\r\n");
-                }
-                NodeFW.close();
-
-                for(Integer p : NegaSamples) if( p != cent && !Samples.contains(p) ) NegaShuf.add(p);
-
-                //Statistics
-                Sta_Nodes += NodeCnt;
-                Sta_Paths += Paths.size();
-                Sta_Types += TypeCnt;
-                Sta_PathperEnt += (double)Paths.size() / (double)NegaSamples.size();
-                Sta_FW.write("Nodes : " + NodeCnt.toString() + "  Types : " + TypeCnt.toString() + "  Paths : "+ Paths.size() + "\r\n");
-                Sta_FW.write("Paths per Entity : " + decifm.format((double)Paths.size() / (double)NegaSamples.size()));
-
-                //debug
-                //System.out.println("Sampls : " + "  " + Samples.size() + "\tPaths : " + Paths.size()+ "\t" + "NegaShufs : " + NegaShuf.size() + "\t" + mat.format(new Date()));
-                //if(Samples.contains(cent))System.out.println("Samples Contains Center!");
-                //System.out.println("Cent : " + cent.toString());System.out.print("Samples :");for(Integer p : Samples)System.out.print(" " + p.toString());System.out.println();
-
-                Integer tmp_Nodes_Train = 0;
-                Integer tmp_Paths_Train = 0;
+                Integer CYCnt = 0;
 
                 for(Integer trainnum = 1; trainnum <= TrainLim; trainnum ++)
                 {
-                    Integer CYCnt = 0;
+                    CYCnt = 0;
                     trainsamples.clear();
                     while(trainsamples.size() < trainnum)
                     {
@@ -486,42 +454,38 @@ public class DataGen_DBpedia {
                     fw = new FileWriter(foldn + "dbpedia.trainModels/train." + trainnum.toString() + "/nothing.txt");
                     fw.write("Hello World!\r\n"); fw.close();
 
+                    pth.clear();
                     //train
                     fw = new FileWriter(trainfold + "train_relation_1");
-                    Integer lines = 0, label = 0, tmplb = 0;
+                    nega.clear();
+                    Integer lines = 0, label = 0;
                     while(lines < TrainLines)
                     {
-                        lines ++; tmplb ++;
+                        lines ++;
                         if(lines % everysample == 1 || everysample == 1)
                         {
                             Integer tmplabel = label;
                             label++;
                             label = Math.min(label, trainnum);
-                            if(label > tmplabel)
-                            {
-                                Collections.shuffle(NegaSamples);
-                                tmplb = 0;
-                                if(trainnum <= 5)
-                                {
-                                    tmp_Nodes_Train ++;
-                                    System.out.print("Train Sample : " + trainsamples.get( label - 1 ));
-                                    if(!Node2Path.containsKey(trainsamples.get( label - 1 ))) System.out.print("  NodeHash : " + NodeHash.get( trainsamples.get( label - 1 ) ));
-                                    System.out.println();
-                                    tmp_Paths_Train += Node2Path.get( trainsamples.get( label - 1 ) ).size();
-                                }
-                                WriteCY( trainsamples.get( label - 1 ), CYfw );
-                            }
+                            if(label > tmplabel) nega.clear();
                         }
-                        Integer nu = 0;
-                        if(tmplb >= NegaSamples.size()) nu = Nodes.get( rd.nextInt(NodeCnt) ); else nu = NegaSamples.get(tmplb);
-                        if(trainnum <= 5)
+                        while( true )
                         {
-                            tmp_Nodes_Train ++;
-                            tmp_Paths_Train += Node2Path.get( nu ).size();
+                            Integer nu = 0;
+                            while (nu <= 0)
+                            {
+                                CYCnt++;
+                                HasWalked.clear();
+                                nu = FindPath(cent, pth, 0);
+                            }
+                            if(Samples.contains(nu))AlreadyOutput.add(nu);
+                            WriteCY(NodeList, CYfw, CYCnt % 2);
+                            if(nega.contains(nu)) continue;
+                            fw.write(NodeHash.get(cent).toString() + "\t" + NodeHash.get(trainsamples.get(label - 1)).toString() + "\t" + NodeHash.get(nu).toString() + "\r\n");
+                            nega.add(nu); break;
                         }
-                        WriteCY(nu, CYfw);
-                        fw.write(NodeHash.get(cent).toString() + "\t" + NodeHash.get( trainsamples.get(label - 1)).toString() + "\t" + NodeHash.get( nu ).toString() + "\r\n");
                     }
+                    //System.out.print("Train     ");
                     fw.close();
 
                     //test
@@ -529,23 +493,19 @@ public class DataGen_DBpedia {
                     CreateFolder(testfold);
                     fw = new FileWriter(testfold + "test_relation_" + trainnum.toString());
                     fw.write(NodeHash.get(cent).toString());
-                    for(Integer p : Samples)
-                        if(!trainsamples.contains(p))
-                        {
-                            WriteCY(p, CYfw);
-                            fw.write("\t" + NodeHash.get(p).toString());
-                        }
-                    Integer negnum = Math.min(NegaNum, NegaShuf.size());
-                    Collections.shuffle(NegaShuf);
-                    //for(Integer p : NegaShuf) System.out.print(p.toString() + " ");
-                    for(Integer labe = 0; labe < negnum; labe ++)
+                    for(Integer p : Samples) if(!trainsamples.contains(p))fw.write("\t" + NodeHash.get(p).toString());
+                    alrcho.clear();
+                    while(CYCnt < CYLim / TrainLim)
                     {
-                        CYCnt ++;
-                        Integer nu = NegaShuf.get(labe);
-                        fw.write("\t" + NodeHash.get( nu ).toString());
-                        WriteCY(nu, CYfw);
-                        //System.out.println(labe.toString() + " " + nu.toString() + "  " + pathlabels.size());
+                        CYCnt ++; HasWalked.clear();
+                        Integer nu = FindPath(cent, pth, 0);
+                        if(nu <= 0)continue;
+                        WriteCY(NodeList, CYfw, CYCnt % 2);
+                        if(Samples.contains(nu)) AlreadyOutput.add(nu);
+                        if(!alrcho.contains(nu) && alrcho.size() < NegaNum) { fw.write("\t" +NodeHash.get(nu).toString()); alrcho.add(nu); }
                     }
+                    //System.out.println("Nega Samp : " + alrcho.size());
+                    //System.out.print("Test     ");
                     fw.close();
 
                     //ideal
@@ -554,17 +514,35 @@ public class DataGen_DBpedia {
                     fw = new FileWriter(idealfold + "ideal_relation_" + trainnum.toString());
                     fw.write(NodeHash.get(cent).toString());
                     for(Integer p : Samples) if(!trainsamples.contains(p))fw.write("\t" + NodeHash.get(p).toString());
+                    //System.out.println("Ideal     ");
                     fw.close();
                 }
 
-                FileWriter HashFW = new FileWriter(foldn + "Hash2Node.txt");
-                for(Integer id = 0; id < NodeCnt; ++id) HashFW.write(id.toString() + "\t" + Nodes.get(id) + "\r\n");
-                HashFW.close();
-
-                Sta_FW.write("  Train Paths per Entity : " + decifm.format((double)tmp_Paths_Train / (double)tmp_Nodes_Train) + "\r\n\r\n");
-                Sta_PathperEnt_Train += (double)tmp_Paths_Train / (double)tmp_Nodes_Train;
-
+                //addition samples paths
+                for(Integer p : Samples)
+                {
+                    if(AlreadyOutput.contains(p)) continue;
+                    ArrayList<Integer> labels = Node2Path.get(p);
+                    for(Integer id : labels)
+                    {
+                        CYCnt ++;
+                        NodeList = Paths.get(id);
+                        WriteCY(NodeList, CYfw, CYCnt % 2);
+                    }
+                }
                 CYfw.close();
+
+                FileWriter NodeFW = new FileWriter(new File( foldn + "/dbpedia/nodefeatures" ));
+                Integer dimen = 2 * (TypeCnt + 1);
+                NodeFW.write(NodeCnt.toString() + " " + dimen.toString() + "\r\n");
+                for(Integer nodeid = 0; nodeid < NodeCnt; nodeid ++)
+                {
+                    Integer node = Nodes.get(nodeid);
+                    NodeFW.write(nodeid.toString() + " " + TypeHash.get( NodeType.get( node ) ).toString() + " ");
+                    GetDegAndEntro(node, NodeFW);
+                    NodeFW.write("\r\n");
+                }
+                NodeFW.close();
             } catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -574,17 +552,6 @@ public class DataGen_DBpedia {
             }
 			//System.out.println("Case : " + i.toString() + "\tEnd!" + "\t" + mat.format(new Date()));
 		}
-        try {
-            Sta_FW.write("All : \r\n");
-            Sta_FW.write("Nodes : " + decifm.format((double)Sta_Nodes / (double)testcase) + "\r\n");
-            Sta_FW.write("Types : " + decifm.format((double)Sta_Types / (double)testcase) + "\r\n");
-            Sta_FW.write("Paths : " + decifm.format((double)Sta_Paths / (double)testcase) + "\r\n");
-            Sta_FW.write("Paths per Entitiy : " + decifm.format(Sta_PathperEnt / (double)testcase) + "\r\n");
-            Sta_FW.write("Train Paths of pre 5 : " + decifm.format(Sta_PathperEnt_Train / (double)testcase) + "\r\n");
-            Sta_FW.write("\r\n\r\n\r\n");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     private static void Doit(String fn)
@@ -600,20 +567,7 @@ public class DataGen_DBpedia {
 		ReadOntology();
 		GetNodeInformation();
 
-		CreateFolder("./datas/toys/toydata/");
-
-        try {
-            Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
-            //dbpedia
-            Doit("dbpedia_11b");
-            Doit("dbpedia_12b");
-            Doit("dbpedia_21b");
-            Doit("dbpedia_22b");
-            Doit("dbpedia_21o");
-            Sta_FW.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		Doit("v2");
 
 		JdbcUtil.closeConnection();
 	}
