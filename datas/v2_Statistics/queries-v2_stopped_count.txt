@@ -1,0 +1,467 @@
+INEX_LD-20120111	vietnam war movie	47
+INEX_LD-20120112	vietnam war facts	69
+INEX_LD-20120121	vietnam food recipes	9
+INEX_LD-20120122	vietnamese food blog	5
+INEX_LD-20120131	vietnam travel national park	10
+INEX_LD-20120132	vietnam travel airports	29
+INEX_LD-20120211	guitar chord tuning	20
+INEX_LD-20120212	guitar chord minor	14
+INEX_LD-20120221	guitar classical flamenco	39
+INEX_LD-20120222	guitar classical bach	13
+INEX_LD-20120231	guitar origin Russia	7
+INEX_LD-20120232	guitar origin blues	45
+INEX_LD-20120311	tango culture movies	25
+INEX_LD-20120312	tango culture countries	14
+INEX_LD-20120321	tango music  composers	38
+INEX_LD-20120322	tango music instruments	11
+INEX_LD-20120331	tango dance styles	9
+INEX_LD-20120332	tango dance history	13
+INEX_LD-20120411	bicycle sport races	75
+INEX_LD-20120412	bicycle sport disciplines	16
+INEX_LD-20120421	bicycle holiday towns	3
+INEX_LD-20120422	bicycle holiday nature	10
+INEX_LD-20120431	bicycle benefits health	2
+INEX_LD-20120432	bicycle benefits environment	6
+INEX_LD-20120511	female rock singers	149
+INEX_LD-20120512	south korean girl groups	90
+INEX_LD-20120521	electronic music genres	64
+INEX_LD-20120522	digital music notation formats	10
+INEX_LD-20120531	music conferences	9
+INEX_LD-20120532	intellectual property rights lobby	20
+INEX_LD-2009022	Szechwan dish food cuisine	20
+INEX_LD-2009039	roman architecture	63
+INEX_LD-2009053	finland car industry manufacturer saab sisu	20
+INEX_LD-2009061	france second world war normandy	54
+INEX_LD-2009062	social network group selection	12
+INEX_LD-2009063	D Day normandy invasion	118
+INEX_LD-2009074	web ranking scoring algorithm	9
+INEX_LD-2009096	Eiffel	23
+INEX_LD-2009111	europe solar power facility	26
+INEX_LD-2009115	virtual museums	24
+INEX_LD-2010004	Indian food	102
+INEX_LD-2010014	composer museum	13
+INEX_LD-2010019	gallo roman architecture in paris	4
+INEX_LD-2010020	electricity source in France	17
+INEX_LD-2010037	social network API	15
+INEX_LD-2010043	List of films from the surrealist category	67
+INEX_LD-2010057	Einstein Relativity theory	36
+INEX_LD-2010069	summer flowers	297
+INEX_LD-2010100	house concrete wood	3
+INEX_LD-2010106	organic food advantages disadvantages	8
+INEX_LD-2012301	Niagara falls origin lake	5
+INEX_LD-2012303	 Valley fever fungal infection San Joaquin	2
+INEX_LD-2012305	North Dakota lowest river of another colour	5
+INEX_LD-2012307	 July 1850  president died Millard Fillmore sworn following day	3
+INEX_LD-2012309	residents small island city state  Malay Peninsula Chinese	4
+INEX_LD-2012311	John Lennon Yoko Ono album Starting Over	20
+INEX_LD-2012313	John Turturro 1991 Coen Brothers film	6
+INEX_LD-2012315	Baguio Quezon City  Manila official independence 1945	5
+INEX_LD-2012317	daggeroso inclined to use a dagger novel Sons and Lovers	3
+INEX_LD-2012318	Directed Bela Glen Glenda Bride Monster Plan 9 Outer Space	5
+INEX_LD-2012319	 1994 short story collection Alice Munro is Open	3
+INEX_LD-2012321	Asian port state city Sir Stamford Raffles	7
+INEX_LD-2012323	Large glaciers island nation Langjokull Hofsjokull Vatnajokull	11
+INEX_LD-2012325	successor James G Blaine studied law	3
+INEX_LD-2012327	Beloved author African American Nobel Prize Literature	9
+INEX_LD-2012329	Sweden Iceland currency	4
+INEX_LD-2012331	Seoul Korea river name ethnic group China	5
+INEX_LD-2012333	Prime minister Canada nicknamed Silver Tongued Laurier longest unbroken term	4
+INEX_LD-2012335	US president authorise nuclear weapons against Japan	2
+INEX_LD-2012336	1906 territory Papua island Australian	9
+INEX_LD-2012337	Texas city Baylor University tornado 1953	3
+INEX_LD-2012339	Nelson Mandela John Dube	6
+INEX_LD-2012341	1997  Houston airport president	3
+INEX_LD-2012343	The Heart of a Woman poet autobiography	2
+INEX_LD-2012345	Kennedy assassination governor of Texas seriously injured	9
+INEX_LD-2012347	seat Florida country Dade	3
+INEX_LD-2012349	Alexander Nevsky Cathedral Bulgarian city liberation Turks	3
+INEX_LD-2012351	Indian Cuisine dish rice dhal vegetables roti papad	20
+INEX_LD-2012353	country German language	17
+INEX_LD-2012354	greatest guitarist	75
+INEX_LD-2012355	England football player highest paid	10
+INEX_LD-2012357	 prima ballerina Bolshoi Theatre 1960	3
+INEX_LD-2012359	 Bob Ricker Executive Director the latest front group for the anti gun movement	0
+INEX_LD-2012361	most famous award winning actor singer	31
+INEX_LD-2012363	American twins famous  American professional tennis double players	4
+INEX_LD-2012365	mathematician computer scientist MIT six inaugural MacVicar Faculty Fellows	4
+INEX_LD-2012367	invented telescope	11
+INEX_LD-2012369	most famous civic military airports	9
+INEX_LD-2012371	most beautiful railway stations world cities located	27
+INEX_LD-2012372	famous historical battlefields opponents fought	46
+INEX_LD-2012373	birds cannot fly	1
+INEX_LD-2012375	animals lay eggs mammals	10
+INEX_LD-2012377	allegedly caused World War I	7
+INEX_LD-2012381	movie directors directed a block buster	5
+INEX_LD-2012383	famous computer scientists disappeared at sea	1
+INEX_LD-2012385	famous politicians vegetarians	7
+INEX_LD-2012387	famous river confluence dam constructed	17
+INEX_LD-2012389	frequently visited sharks gulf Indian Ocean	11
+INEX_LD-2012390	baseball player most homeruns national league	20
+INEX_XER-60	olympic classes dinghy sailing	18
+INEX_XER-62	Neil Gaiman novels	27
+INEX_XER-63	Hugo awarded best novels	79
+INEX_XER-64	Alan Moore graphic novels adapted to film	12
+INEX_XER-65	Pacific navigators Australia explorers	17
+INEX_XER-67	Ferris and observation wheels	26
+INEX_XER-72	films shot in Venice	42
+INEX_XER-73	magazines about indie music	22
+INEX_XER-74	circus mammals	8
+INEX_XER-79	Works by Charles Rennie Mackintosh	5
+INEX_XER-81	Movies about English hooligans	8
+INEX_XER-86	List of countries in World War Two	66
+INEX_XER-87	Axis powers of World War II	31
+INEX_XER-88	Nordic authors are known for children literature	29
+INEX_XER-91	Paul Auster novels	21
+INEX_XER-94	Hybrid cars sold in Europe	43
+INEX_XER-95	Tom Hanks movies he plays a leading role	34
+INEX_XER-96	Pure object oriented programing languages	47
+INEX_XER-97	Compilers that can compile both C and C++	39
+INEX_XER-98	Makers of lawn tennis rackets	12
+INEX_XER-99	Computer systems that have a recursive acronym for the name	20
+INEX_XER-100	Operating systems to Steve Jobs related	19
+INEX_XER-106	Noble english person from the Hundred Years War	40
+INEX_XER-108	State capitals of the United States of America	51
+INEX_XER-109	National capitals situated on islands	48
+INEX_XER-110	Nobel Prize in Literature winners were also poets	51
+INEX_XER-113	Formula 1 drivers that won the Monaco Grand Prix	62
+INEX_XER-114	Formula one races in Europe	26
+INEX_XER-115	Formula One World Constructors Champions	25
+INEX_XER-116	Italian nobel prize winners	21
+INEX_XER-117	Musicians appeared in the Blues Brothers movies	35
+INEX_XER-118	French car models in 1960s	31
+INEX_XER-119	Swiss cantons they speak German	37
+INEX_XER-121	US presidents since 1960	16
+INEX_XER-122	Movies with eight or more Academy Awards	15
+INEX_XER-123	FIFA world cup national team winners since 1974	12
+INEX_XER-124	Novels that won the Booker Prize	51
+INEX_XER-125	countries have won the FIFA world cup	25
+INEX_XER-126	toy train manufacturers that are still in business	25
+INEX_XER-127	german female politicians	66
+INEX_XER-128	Bond girls	66
+INEX_XER-129	Science fiction book written in the 1980	48
+INEX_XER-130	Star Trek Captains	8
+INEX_XER-132	living nordic classical composers	12
+INEX_XER-133	EU countries	31
+INEX_XER-134	record-breaking sprinters in male 100-meter sprints	27
+INEX_XER-135	professional baseball team in Japan	31
+INEX_XER-136	Japanese players in Major League Baseball	45
+INEX_XER-138	National Parks East Coast Canada US	27
+INEX_XER-139	Films directed by Akira Kurosawa	33
+INEX_XER-140	Airports in Germany	60
+INEX_XER-141	Universities in Catalunya	19
+INEX_XER-143	Hanseatic league in Germany in the Netherlands Circle	26
+INEX_XER-144	chess world champions	73
+INEX_XER-147	Chemical elements that are named after people	7
+QALD2_te-1	German cities have more than 250000 inhabitants	27
+QALD2_te-2	was the successor of John F Kennedy	2
+QALD2_te-3	is the mayor of Berlin	10
+QALD2_te-5	is the second highest mountain on Earth	5
+QALD2_te-6	all professional skateboarders from Sweden	4
+QALD2_te-8	To countries does the Himalayan mountain system extend	10
+QALD2_te-9	a list of all trumpet players that were bandleaders	86
+QALD2_te-11	is the Formula 1 race driver with the most races	8
+QALD2_te-12	all world heritage sites designated within the past five years	21
+QALD2_te-13	is the youngest player in the Premier League	11
+QALD2_te-14	all members of Prodigy	14
+QALD2_te-15	is the longest river	6
+QALD2_te-17	all cars that are produced in Germany	323
+QALD2_te-19	all people that were born in Vienna and died in Berlin	12
+QALD2_te-21	is the capital of Canada	2
+QALD2_te-22	is the governor of Texas	28
+QALD2_te-24	was the father of Queen Elizabeth II	4
+QALD2_te-25	US state has been admitted latest	4
+QALD2_te-27	Sean Parnell is the governor of US state	1
+QALD2_te-28	all movies directed by Francis Ford Coppola	33
+QALD2_te-29	all actors starring in movies directed by and starring William Shatner	20
+QALD2_te-31	all current Methodist national leaders	12
+QALD2_te-33	all Australian nonprofit organizations	43
+QALD2_te-34	In military conflicts did Lawrence of Arabia participate	8
+QALD2_te-35	developed Skype	6
+QALD2_te-39	all companies in Munich	136
+QALD2_te-40	List all boardgames by GMT	10
+QALD2_te-41	founded Intel	3
+QALD2_te-42	is the husband of Amanda Palmer	2
+QALD2_te-43	all breeds of the German Shepherd dog	2
+QALD2_te-44	cities does the Weser flow through	14
+QALD2_te-45	countries are connected by the Rhine	12
+QALD2_te-46	professional surfers were born on the Philippines	2
+QALD2_te-48	In UK city are the headquarters of the MI6	2
+QALD2_te-49	other weapons did the designer of the Uzi develop	3
+QALD2_te-51	all Frisian islands that belong to the Netherlands	24
+QALD2_te-53	is the ruling party in Lisbon	1
+QALD2_te-55	Greek goddesses dwelt on Mount Olympus	9
+QALD2_te-57	the Apollo 14 astronauts	6
+QALD2_te-58	is the time zone of Salt Lake City	4
+QALD2_te-59	US states are in the same timezone as Utah	4
+QALD2_te-60	a list of all lakes in Denmark	15
+QALD2_te-63	all Argentine films	1082
+QALD2_te-64	all launch pads operated by NASA	29
+QALD2_te-65	instruments did John Lennon play	4
+QALD2_te-66	ships were called after Benjamin Franklin	10
+QALD2_te-67	are the parents of the wife of Juan Carlos I	4
+QALD2_te-72	In US state is Area 51 located?	3
+QALD2_te-75	daughters of British earls died in the same place they were born in	2
+QALD2_te-76	List the children of Margaret Thatcher	3
+QALD2_te-77	was called Scarface	8
+QALD2_te-80	all books by William Goldman with more than 300 pages	15
+QALD2_te-81	books by Kerouac were published by Viking Press	6
+QALD2_te-82	a list of all American inventions	35
+QALD2_te-84	created the comic Captain America	9
+QALD2_te-86	is the largest city in Australia	7
+QALD2_te-87	composed the music for Harold and Maude	2
+QALD2_te-88	films starring Clint Eastwood did he direct himself	30
+QALD2_te-89	In city was the former Dutch queen Juliana buried	1
+QALD2_te-90	is the residence of the prime minister of Spain	2
+QALD2_te-91	US State has the abbreviation MN	36
+QALD2_te-92	all songs from Bruce Springsteen released between 1980 and 1990	35
+QALD2_te-93	movies did Sam Raimi direct after Army of Darkness	11
+QALD2_te-95	wrote the lyrics for the Polish national anthem	1
+QALD2_te-97	painted The Storm on the Sea of Galilee	4
+QALD2_te-98	country does the creator of Miffy come from	3
+QALD2_te-99	For label did Elvis record his first album	9
+QALD2_te-100	produces Orangina	3
+QALD2_tr-1	all female Russian astronauts	9
+QALD2_tr-3	is the daughter of Bill Clinton married to	2
+QALD2_tr-4	river does the Brooklyn Bridge cross	5
+QALD2_tr-6	did Abraham Lincoln die	7
+QALD2_tr-8	states of Germany are governed by the Social Democratic Party	10
+QALD2_tr-9	US states possess gold minerals	5
+QALD2_tr-10	In country does the Nile start	5
+QALD2_tr-11	countries have places with more than two caves	24
+QALD2_tr-13	classis does the Millepede belong to	1
+QALD2_tr-15	created Goofy	10
+QALD2_tr-16	the capitals of all countries in Africa	45
+QALD2_tr-17	all cities in New Jersey with more than 100000 inhabitants	6
+QALD2_tr-18	museum exhibits The Scream by Munch	1
+QALD2_tr-21	states border Illinois	8
+QALD2_tr-22	In country is the Limerick Lake	5
+QALD2_tr-23	television shows were created by Walt Disney	51
+QALD2_tr-24	mountain is the highest after the Annapurna	8
+QALD2_tr-25	In films directed by Garry Marshall was Julia Roberts starring	5
+QALD2_tr-26	bridges are of the same type as the Manhattan Bridge	151
+QALD2_tr-28	European countries have a constitutional monarchy	18
+QALD2_tr-29	awards did WikiLeaks win	1
+QALD2_tr-30	state of the USA has the highest population density	2
+QALD2_tr-31	is the currency of the Czech Republic	3
+QALD2_tr-32	countries in the European Union adopted the Euro	18
+QALD2_tr-34	countries have more than two official languages	35
+QALD2_tr-35	is the owner of Universal Studios	2
+QALD2_tr-36	Through countries does the Yenisei river flow	4
+QALD2_tr-38	monarchs of the United Kingdom were married to a German	5
+QALD2_tr-40	is the highest mountain in Australia	10
+QALD2_tr-41	all soccer clubs in Spain	846
+QALD2_tr-42	are the official languages of the Philippines	15
+QALD2_tr-43	is the mayor of New York City	17
+QALD2_tr-44	designed the Brooklyn Bridge	3
+QALD2_tr-45	telecommunications organizations are located in Belgium	12
+QALD2_tr-47	is the highest place of Karakoram	25
+QALD2_tr-49	all companies in the advertising industry	341
+QALD2_tr-50	did Bruce Carver die from	2
+QALD2_tr-51	all school types	102
+QALD2_tr-52	presidents were born in 1945	14
+QALD2_tr-53	all presidents of the United States	49
+QALD2_tr-54	was the wife of US president Lincoln	3
+QALD2_tr-55	developed the video game World of Warcraft	8
+QALD2_tr-57	List all episodes of the first season of the HBO television series The Sopranos	26
+QALD2_tr-58	produced the most films	2
+QALD2_tr-59	all people with first name Jimmy	1112
+QALD2_tr-61	mountains are higher than the Nanga Parbat	12
+QALD2_tr-62	created Wikipedia	4
+QALD2_tr-63	all actors starring in Batman Begins	19
+QALD2_tr-64	software has been developed by organizations founded in California	137
+QALD2_tr-65	companies work in the aerospace industry as well as on nuclear reactor technology	14
+QALD2_tr-68	actors were born in Germany	116
+QALD2_tr-69	caves have more than 3 entrances	20
+QALD2_tr-70	all films produced by Hal Roach	488
+QALD2_tr-71	all video games published by Mean Hamster Software	4
+QALD2_tr-72	languages are spoken in Estonia	14
+QALD2_tr-73	owns Aldi	5
+QALD2_tr-74	capitals in Europe were host cities of the summer olympic games	14
+QALD2_tr-75	has been the 5th president of the United States of America	4
+QALD2_tr-77	music albums contain the song Last Christmas	13
+QALD2_tr-78	all books written by Danielle Steel	51
+QALD2_tr-79	airports are located in California USA	122
+QALD2_tr-80	all Canadian Grunge record labels	4
+QALD2_tr-81	country has the most official languages	8
+QALD2_tr-82	In programming language is GIMP written	3
+QALD2_tr-83	produced films starring Natalie Portman	47
+QALD2_tr-84	all movies with Tom Cruise	30
+QALD2_tr-85	In films did Julia Roberts as well as Richard Gere play	3
+QALD2_tr-86	all female German chancellors	7
+QALD2_tr-87	wrote the book The pillars of the Earth	3
+QALD2_tr-89	all soccer clubs in the Premier League	399
+QALD2_tr-91	organizations were founded in 1950	240
+QALD2_tr-92	is the highest mountain	11
+SemSearch_ES-1	44 magnum hunting	5
+SemSearch_ES-2	B F Skinner	4
+SemSearch_ES-3	Bookwork	1
+SemSearch_ES-4	NAACP Image Awards	3
+SemSearch_ES-5	Scott County	19
+SemSearch_ES-6	air wisconsin	4
+SemSearch_ES-7	airsoft glock	5
+SemSearch_ES-9	american embassy nairobi	3
+SemSearch_ES-10	asheville north carolina	19
+SemSearch_ES-11	austin powers	16
+SemSearch_ES-12	austin texas	17
+SemSearch_ES-13	banana paper making	0
+SemSearch_ES-14	ben franklin	14
+SemSearch_ES-15	bradley center	0
+SemSearch_ES-16	brooklyn bridge	8
+SemSearch_ES-17	butte montana	6
+SemSearch_ES-18	canasta cards	1
+SemSearch_ES-19	carl lewis	3
+SemSearch_ES-20	carolina	20
+SemSearch_ES-21	charles darwin	19
+SemSearch_ES-22	city of charlotte	18
+SemSearch_ES-23	city of virginia beach	20
+SemSearch_ES-24	coastal carolina	24
+SemSearch_ES-25	david suchet	7
+SemSearch_ES-26	disney orlando	7
+SemSearch_ES-28	el salvador	28
+SemSearch_ES-29	ellis college	1
+SemSearch_ES-30	eloan line of credit	3
+SemSearch_ES-31	emery	30
+SemSearch_ES-32	fitzgerald auto mall chambersburg pa	1
+SemSearch_ES-33	harry potter	39
+SemSearch_ES-34	harry potter movie	27
+SemSearch_ES-36	imdb batman returns	5
+SemSearch_ES-37	jack johnson	30
+SemSearch_ES-38	jack the ripper	15
+SemSearch_ES-39	james caldwell high school	1
+SemSearch_ES-40	james clayton md	1
+SemSearch_ES-41	joan of arc	25
+SemSearch_ES-42	john maxwell	16
+SemSearch_ES-45	keith urban	30
+SemSearch_ES-47	king arthur	18
+SemSearch_ES-49	laura bush	8
+SemSearch_ES-50	laura steele bob and tom	2
+SemSearch_ES-52	lincoln park	24
+SemSearch_ES-53	lynchburg virginia	23
+SemSearch_ES-54	marc anthony	21
+SemSearch_ES-56	mario bros	20
+SemSearch_ES-57	martin luther king	6
+SemSearch_ES-58	mason ohio	2
+SemSearch_ES-59	mercy hospital in des moines ia	0
+SemSearch_ES-60	michael douglas	9
+SemSearch_ES-61	mr rourke fantasy island	0
+SemSearch_ES-63	old winchester shotguns	11
+SemSearch_ES-65	orlando florida	26
+SemSearch_ES-66	overeaters anonymous	2
+SemSearch_ES-67	ovguide movies	1
+SemSearch_ES-68	pierce county washington	20
+SemSearch_ES-70	radio italia online	10
+SemSearch_ES-71	richmond virginia	21
+SemSearch_ES-72	rock 103 memphis	2
+SemSearch_ES-73	rowan university	7
+SemSearch_ES-74	sacred heart u	8
+SemSearch_ES-75	sagemont church houston tx	0
+SemSearch_ES-76	san antonio	33
+SemSearch_ES-77	savannah tech	4
+SemSearch_ES-78	sharp pc	6
+SemSearch_ES-79	shobana masala	1
+SemSearch_ES-80	sonny and cher	34
+SemSearch_ES-81	south dakota state university	13
+SemSearch_ES-82	st lucia	20
+SemSearch_ES-83	st paul saints	7
+SemSearch_ES-84	the dish danielle fishel	2
+SemSearch_ES-85	the longest yard sale	0
+SemSearch_ES-86	the morning call lehigh valley pa	3
+SemSearch_ES-88	thomas jefferson	26
+SemSearch_ES-89	university of north dakota	10
+SemSearch_ES-90	university of phoenix	3
+SemSearch_ES-91	westminster abbey	8
+SemSearch_ES-93	08 toyota tundra	6
+SemSearch_ES-94	Hugh Downs	3
+SemSearch_ES-95	MADRID	30
+SemSearch_ES-96	New England Coffee	5
+SemSearch_ES-97	PINK PANTHER 2	20
+SemSearch_ES-98	University of Texas at Austin	23
+SemSearch_ES-99	University of York	6
+SemSearch_ES-100	YMCA Tampa	3
+SemSearch_ES-101	ashley wagner	1
+SemSearch_ES-102	beach flowers	14
+SemSearch_ES-104	bourbonnais il	2
+SemSearch_ES-106	chase masterson	3
+SemSearch_ES-107	concord steel	1
+SemSearch_ES-108	danielia cotton	1
+SemSearch_ES-109	david hewlett	8
+SemSearch_ES-111	eagle rock ca	4
+SemSearch_ES-114	glenn frey	25
+SemSearch_ES-115	goodwill of michigan	1
+SemSearch_ES-118	iowa energy	8
+SemSearch_ES-119	john elliott	18
+SemSearch_ES-120	lawrence general hospital	3
+SemSearch_ES-123	michael zimmerman	1
+SemSearch_ES-124	motorola bluetooth hs850	4
+SemSearch_ES-125	nokia e73	5
+SemSearch_ES-127	palm tungsten e2 handheld	2
+SemSearch_ES-128	philadelphia neufchatel cheese	1
+SemSearch_ES-129	pizza populous detroit mi	1
+SemSearch_ES-130	plymouth police department	0
+SemSearch_ES-131	scpa san diego	1
+SemSearch_ES-132	sealy mattress co	3
+SemSearch_ES-135	spring shoes canada	0
+SemSearch_ES-136	sri lanka government gazette	5
+SemSearch_ES-137	steak express	1
+SemSearch_ES-139	the big texan steak house	3
+SemSearch_ES-141	ventura county court	6
+SemSearch_LS-1	Apollo astronauts walked on the Moon	22
+SemSearch_LS-2	Arab states of the Persian Gulf	20
+SemSearch_LS-3	astronauts landed on the Moon	17
+SemSearch_LS-4	Axis powers of World War II	27
+SemSearch_LS-5	books of the Jewish canon	14
+SemSearch_LS-6	boroughs of New York City	16
+SemSearch_LS-7	Branches of the US military	38
+SemSearch_LS-8	continents in the world	13
+SemSearch_LS-9	degrees of Eastern Orthodox monasticism	5
+SemSearch_LS-10	did nicole kidman have any siblings	2
+SemSearch_LS-11	dioceses of the church of ireland	28
+SemSearch_LS-12	first targets of the atomic bomb	16
+SemSearch_LS-13	five great epics of Tamil literature	5
+SemSearch_LS-14	gods dwelt on Mount Olympus	13
+SemSearch_LS-16	hijackers in the September 11 attacks	31
+SemSearch_LS-17	houses of the Russian parliament	6
+SemSearch_LS-18	john lennon parents	3
+SemSearch_LS-19	kenya captain in cricket	10
+SemSearch_LS-20	kublai khan siblings	10
+SemSearch_LS-21	lilly allen parents	1
+SemSearch_LS-22	major leagues in the united states	38
+SemSearch_LS-24	matt berry tv series	7
+SemSearch_LS-25	members of u2	9
+SemSearch_LS-26	movies starring erykah badu	4
+SemSearch_LS-29	nations Portuguese is an official language	18
+SemSearch_LS-30	orders or choirs of angels	3
+SemSearch_LS-31	permanent members of the UN Security Council	13
+SemSearch_LS-32	presidents depicted on mount rushmore died of shooting	1
+SemSearch_LS-33	provinces and territories of Canada	43
+SemSearch_LS-34	ratt albums	24
+SemSearch_LS-35	republics of the former Yugoslavia	21
+SemSearch_LS-36	revolutionaries of 1959 in Cuba	21
+SemSearch_LS-37	standard axioms of set theory	6
+SemSearch_LS-38	states that border oklahoma	6
+SemSearch_LS-39	ten ancient Greek city kingdoms of Cyprus	13
+SemSearch_LS-40	the first 13 american states	2
+SemSearch_LS-41	the four of the companions of the prophet	7
+SemSearch_LS-42	twelve tribes or sons of Israel	4
+SemSearch_LS-43	books did paul of tarsus write	0
+SemSearch_LS-44	languages do they speak in afghanistan	14
+SemSearch_LS-46	the British monarch is also head of state	8
+SemSearch_LS-49	invented the python programming language	8
+SemSearch_LS-50	wonders of the ancient world	9
+TREC_Entity-1	Carriers that Blackberry makes phones for	36
+TREC_Entity-2	Winners of the ACM Athena award	5
+TREC_Entity-4	Professional sports teams in Philadelphia	28
+TREC_Entity-5	Products of Medimmune, Inc	3
+TREC_Entity-6	Organizations that award Nobel prizes	13
+TREC_Entity-7	Airlines that currently use Boeing 747 planes	39
+TREC_Entity-9	Members of The Beaux Arts Trio	3
+TREC_Entity-10	Campuses of Indiana University	21
+TREC_Entity-11	Donors to the Home Depot Foundation	5
+TREC_Entity-12	Airlines that Air Canada has code share flights with	22
+TREC_Entity-14	Authors awarded an Anthony Award at Bouchercon in 2007	5
+TREC_Entity-15	Universities that are members of the SEC conference for football	22
+TREC_Entity-16	Sponsors of the Mancuso quilt festivals	2
+TREC_Entity-17	Chefs with a show on the Food Network	50
+TREC_Entity-18	Members of the band Jefferson Airplane	27
+TREC_Entity-19	Companies that John Hennessey serves on the board of	3
+TREC_Entity-20	Scotch whisky distilleries on the island of Islay	4

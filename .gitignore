@@ -1,0 +1,8 @@
+bin/
+.idea/
+*.iml
+out/
+datas/toys/toydata/
+datas/toys/toyin/
+datas/toys/toydata_2/
+datas/toys/toydata_3/

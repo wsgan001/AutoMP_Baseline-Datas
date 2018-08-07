@@ -1,0 +1,46 @@
+1.baselines:
+Relsim [16¡¯SIAM]
+Relsim+ [16¡¯SIAM]
+ESER [17¡¯SIGIR]
+ProxEmbed[17'AAAI]
+AutoMP-[ours]
+
+2.queries:
+POP YAGO (simple)
+DBPE DBpedia (simple)
+SYS DBpedia (complex)
+
+3.diagrams:
+NDCG@10 (all the baseline and AutoMP) on simple queries(POP and DBPE)
+NDCG@20 (all the baseline and AutoMP) on simple queries(POP and DBPE)
+NDCG@10 (all the baseline and AutoMP) on complex queries(SYS)
+NDCG@20 (all the baseline and AutoMP) on complex queries(SYS)
+
+?? Running time of AutoMP as Number of meta-paths increse with various number of example entitiies
+
+NDCG@10 (AutoMP only) on simple queries(POP and DBPE) with increasing Number of example entities
+NDCG@20 (AutoMP only) on simple queries(POP and DBPE) with increasing Number of example entities
+NDCG@10 (AutoMP only) on complex queries(SYS) with increasing Number of example entities
+NDCG@20 (AutoMP only) on complex queries(SYS) with increasing Number of example entities
+
+NDCG@10 (AutoMP only) on simple queries(POP and DBPE) with increasing Number of meta-paths
+NDCG@20 (AutoMP only) on simple queries(POP and DBPE) with increasing Number of meta-paths
+NDCG@10 (AutoMP only) on complex queries(SYS) with increasing Number of meta-paths
+NDCG@20 (AutoMP only) on complex queries(SYS) with increasing Number of meta-paths
+
+4.case study:
+
+select on of the query from SYS to illustrate the effectiveness of AutoMP
+
+
+
+
+
+  
+
+
+
+
+
+
+

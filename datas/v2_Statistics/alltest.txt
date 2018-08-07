@@ -1,0 +1,1806 @@
+3	INEX_LD-2009053	finland car industry manufacturer saab sisu
+1701777	Saab 90	8.0
+689435	Opel Calibra
+619244	Saab 9-3
+618143	Saab 9-5
+2658853	Saab 9-7X
+1676546	Saab 9000
+1737753	Saab 900
+1771355	Saab 93
+2691314	Saab 96
+1165191	Saab 99
+893416	SiSU
+226655	Sisu A-45
+911519	Sisu Auto
+895355	Sisu E13TP
+814312	Sisu KB-112
+1581962	Sisu RA-140 DS
+513235	Sisu S-21
+844138	Sisu SA-150
+846173	Sisu SA-240
+2662766	Valmet
+1400642	Valmet Automotive
+
+
+26	INEX_LD-20120132	vietnam travel airports
+2372121	Vietnam	12.0
+1027883	Air Mekong
+873152	Air Vietnam
+116904	Air transport in Vietnam
+745689	Airports Corporation of Vietnam
+800755	An Giang Airport
+3109806	Buon Ma Thuot Airport
+1433655	Cam Ly Airport
+500073	Cam Ranh International Airport
+3419478	Cat Bi International Airport
+2765571	Chu Lai International Airport
+3243762	Con Dao Airport
+2486843	Da Nang International Airport
+2284546	Dong Hoi Airport
+164170	Dong Tac Airport
+1905721	Gia Lam Airport
+735859	Indochina Airlines
+1370382	Lien Khuong Airport
+489013	Long Thanh International Airport
+202909	Noi Bai International Airport
+653521	Phu Cat Airport
+1077595	Phu Quoc International Airport
+2171546	Pleiku Airport
+2130339	Quang Tri Airport
+1691165	Tan Son Nhat International Airport
+1087550	Tho Xuan Airport
+979310	U-Tapao International Airport
+1637182	Vietnam Air Services Company
+396290	Vietnam Airlines
+2372619	Vung Tau Airport
+
+
+32	INEX_LD-20120232	guitar origin blues
+2045460	Blues	551.0
+248755	12-String Blues
+406201	Bill Johnson (blues musician)
+1891764	Blind Blake
+1415568	Blind Boy Fuller
+2045460	Blues
+2588552	Blues rock
+2171900	Bob Brunning
+2469979	Brown-eyed soul
+1908759	Canadian blues
+972548	Carl Martin (musician)
+2769792	Christoffer Andersen
+1499687	Country blues
+1592102	Dave Hole
+79993	Deborah Coleman
+2047698	Delta blues
+697805	Dutch Tilders
+104096	Electric blues
+1437401	Elmore James
+1071805	Freddie King
+942444	Gene Kelton
+1695497	Grant Austin Taylor
+2765120	Guitar Slim, Jr.
+1070033	Hill country blues
+2191993	Howard Luedtke
+1831140	It Hurts Me Too
+1462478	Joe Bonamassa
+2421669	Johnny B. Moore
+21406	Jonny Lang
+1057213	Keb' Mo'
+1759827	Kelly Hoppe
+2681650	Luther Johnson (Guitar Junior)
+1654514	Maxwell Street Jimmy Davis
+1867107	New Orleans blues
+1150252	North Mississippi Allstars
+1603863	Peter Green (musician)
+2603697	Piedmont blues
+149213	Pink Anderson
+571746	Rhythm and blues
+303382	Sidewalk Blues
+268200	Skiffle
+668302	Steve James (blues musician)
+118362	Texas blues
+2201551	The Merle Travis Guitar
+2218617	Vic Briggs
+691752	Walkin' Cane Mark
+
+
+46	INEX_LD-20120512	south korean girl groups
+2375405	South Korea	256.0
+1107398	2NE1
+303042	2NE1 discography
+1084103	4L (band)
+156279	4Minute
+64004	AOA (band)
+2735098	After School (band)
+534832	Apink
+2665560	Baby Vox Re.V
+2485405	Bambino (band)
+1258236	Blady
+2562802	Bob Girls
+1734773	Brave Girls
+429549	Brown Eyed Girls
+2715830	Chakra (band)
+2228140	Chocolat (band)
+349469	Choi Soo-young
+1152615	Dal Shabet
+265510	Davichi
+2487057	Ddokateun Mam
+560692	EXID
+373065	F(x) (band)
+805533	F-ve Dolls
+899018	Factory Girl (TV series)
+2762313	Fin.K.L
+1928843	For Muzik
+1551538	GP Basic
+2281164	Girl's Day
+1517398	Girl group
+1027179	Girls' Generation's Horror Movie Factory
+2375788	Girls' Generation-TTS
+447778	Girls' Generation
+755777	Girls' Generation discography
+1744117	Han Seung-yeon
+1839297	Hi Suhyun
+348287	Himnaera Him!
+2016937	Hit Your Heart
+1385905	Hyomin
+2422776	Isak N Jiyeon
+2143922	JQT (band)
+366545	JYP Entertainment
+2750149	Jewelry (band)
+881157	Jumping (EP)
+2441993	K-pop
+1686555	Kang Ji-young
+435256	Kara (South Korean band)
+1197061	Kara discography
+799911	Kim Jae-kyung
+1814053	Kiss (South Korean band)
+1421388	Kwon Mina
+2475522	Kwon Yuri
+738475	LPG (South Korean band)
+1242049	Ladies' Code
+207403	Lie (T-ara song)
+2929460	List of Girls' Generation concert tours
+1169035	Lovelyz
+2439766	Luna (singer)
+1487179	Minx (band)
+1193427	Miss A
+792515	Narsha
+1456834	Nicole Jung
+1178886	Nine Muses (band)
+1420481	Oh! (Girls' Generation song)
+2177252	Papaya (band)
+1656599	Park Choa
+1676776	Park Gyu-ri
+825339	Pinocchio (album)
+1587939	Playback (South Korean band)
+469497	Puretty
+310697	Rainbow (South Korean band)
+159911	Rania (band)
+1171110	Ryu Hwa-young
+1013000	S.E.S. (band)
+761191	Secret (South Korean band)
+705856	SeeYa
+2246855	Seohyun
+1192315	She'z
+2215232	Sistar
+2423792	Skarf
+567210	Spica (band)
+722833	Stellar (South Korean band)
+1061867	Sugar (South Korean band)
+2808906	Sunny (singer)
+2277734	T-ara
+747675	T.T.MA
+1823435	TTL (Time to Love)
+1626044	TTL Listen 2
+2237397	The Boys (Girls' Generation album)
+1647757	Unicorn (South Korean band)
+497917	Wassup (band)
+2661442	Wonder Girls
+
+
+97	INEX_LD-2012389	frequently visited sharks gulf Indian Ocean
+2444116	Peritraeus hystrix	9.0
+1430989	Balloon shark
+1770271	Gulf of Aden
+1171337	Gulf of Mannar
+377162	Milk shark
+1213111	Mustelus mangalorensis
+1917210	Orectolobus
+2749479	Silky shark
+2795270	Silvertip shark
+2319186	Smooth hammerhead
+1207942	Whale shark
+583199	Wobbegong
+
+
+101	INEX_XER-108	State capitals of the United States of America
+630840	United States	1459.0
+2593030	Albany, New York
+1748585	Annapolis, Maryland
+725709	Atlanta
+1518211	Augusta, Maine
+1321059	Austin, Texas
+1554204	Baton Rouge, Louisiana
+2053939	Bismarck, North Dakota
+769072	Boise, Idaho
+395119	Boston
+420883	Carson City, Nevada
+436925	Charleston, West Virginia
+959735	Charlotte Amalie, U.S. Virgin Islands
+2185790	Cheyenne, Wyoming
+2086625	Columbia, South Carolina
+1656302	Concord, New Hampshire
+1315606	Denver
+945093	Des Moines, Iowa
+1087024	Dover, Delaware
+68730	Frankfort, Kentucky
+696835	Harrisburg, Pennsylvania
+270084	Hartford, Connecticut
+2346764	Helena, Montana
+2046168	Honolulu
+1734919	Indianapolis
+774649	Jackson, Mississippi
+732289	Jefferson City, Missouri
+2441135	Juneau, Alaska
+1620426	Lansing, Michigan
+1714113	Lincoln, Nebraska
+2995663	List of capitals in the United States
+2817953	Little Rock, Arkansas
+2697982	Louisville, Georgia
+1096909	Madison, Wisconsin
+1460484	Montgomery, Alabama
+659789	Montpelier, Vermont
+2303172	Nashville, Tennessee
+1916005	Natchez, Mississippi
+268953	Oklahoma City
+2470917	Pawnee, Kansas
+2062045	Pierre, South Dakota
+2003931	Raleigh, North Carolina
+557198	Richmond, Virginia
+2310153	Saint Paul, Minnesota
+136202	Salem, Oregon
+1381178	Salt Lake City
+318084	Santa Fe, New Mexico
+1877483	Springfield, Illinois
+1983150	Tallahassee, Florida
+1901987	Topeka, Kansas
+1577391	Trenton, New Jersey
+733174	Washington, D.C.
+
+
+110	INEX_XER-119	Swiss cantons they speak German
+640659	Switzerland	926.0
+849362	Aarau
+836860	Aargau
+2878714	Appenzell Ausserrhoden
+2826074	Appenzell Innerrhoden
+2897594	Basel-Landschaft
+2945880	Basel-Stadt
+765721	Bern
+2268707	Biel/Bienne
+1496065	Büsingen am Hochrhein
+2730675	Canton of Basel
+633119	Canton of Bern
+2835483	Canton of Fribourg
+2833551	Canton of Glarus
+2844098	Canton of Lucerne
+2934427	Canton of Schaffhausen
+2606215	Canton of Schwyz
+2916516	Canton of Solothurn
+150370	Canton of St. Gallen
+2505501	Canton of Uri
+3029349	Canton of Zug
+736490	Canton of Zürich
+2889451	Cantons of Switzerland
+1892745	German immigration to Switzerland
+2603514	Languages of Switzerland
+1312886	Laufen District
+1107535	Mont-Tramelan
+1039420	Nidwalden
+972500	Obwalden
+148843	Old Swiss Confederacy
+168496	Schaffhausen
+1055070	Schwyz
+1024117	Solothurn
+2529483	Swiss German
+1720108	Swiss Standard German
+2832331	Thurgau
+2821907	Valais
+1019926	Zug
+
+
+112	INEX_XER-122	Movies with eight or more Academy Awards
+843197	California	6.0
+2716617	Academy Award for Best Actress
+1519852	Amadeus
+2161309	Amadeus (film)
+187536	Ben-Hur (1959 film)
+608018	Cabaret (1972 film)
+748329	From Here to Eternity
+1075322	Gandhi (film)
+1211618	Gigi (1958 film)
+1034251	Gone with the Wind (film)
+2385305	My Fair Lady (film)
+1940211	On the Waterfront
+803867	The English Patient (film)
+2014072	The Last Emperor
+475280	Titanic (1997 film)
+1244947	West Side Story (film)
+
+
+122	INEX_XER-133	EU countries
+1518055	Croatia	75.0
+2760004	2004 enlargement of the European Union
+299600	2013 enlargement of the European Union
+664382	Austria
+631939	Belgium
+1489619	Bulgaria
+1523582	Cyprus
+1483129	Czech Republic
+636311	Denmark
+1721683	Enlargement of the European Union
+701667	Estonia
+901941	European Union
+634137	Finland
+533450	France
+669872	Germany
+665496	Greece
+605877	Hungary
+2489067	Ireland
+639551	Italy
+1480896	Latvia
+638484	Lithuania
+633038	Luxembourg
+703752	Netherlands
+637404	Poland
+669837	Portugal
+604781	Republic of Ireland
+1488550	Romania
+1484238	Slovakia
+1485317	Slovenia
+606958	Spain
+635242	Sweden
+536772	United Kingdom
+
+
+128	INEX_XER-140	Airports in Germany
+669872	Germany	58.0
+359268	Allendorf Airport
+59070	Bad Gandersheim Airport
+70754	Bad Kissingen Airport
+1492384	Berlin Brandenburg Airport
+1099477	Berlin Schönefeld Airport
+1098367	Berlin Tegel Airport
+1096148	Berlin Tempelhof Airport
+1665848	Bindlacher Berg Airport
+1765023	Bitburg Airport
+712459	Black Forest Airport
+1110797	Borkum Airfield
+623420	Braunschweig Airport
+419746	Bremen Airport
+1763750	Bremerhaven Airport
+1730736	Cologne Bonn Airport
+2716777	Dortmund Airport
+2417495	Dresden Airport
+878052	Düsseldorf Airport
+2620152	Düsseldorf Mönchengladbach Airport
+2472361	Emden Airport
+931393	Frankfurt Airport
+2082456	Frankfurt Egelsbach Airport
+714495	Frankfurt–Hahn Airport
+1988032	Friedrichshafen Airport
+2430628	Hamburg Airport
+2476476	Hamburg Finkenwerder Airport
+645275	Hannover Airport
+72113	Heide–Büsum Airport
+1044009	Heligoland Airport
+2610018	Heringsdorf Airport
+2533256	Herzogenaurach Airport
+1455612	Hof–Plauen Airport
+2536962	Ingolstadt Manching Airport
+2120398	Karlsruhe/Baden-Baden Airport
+2625994	Kassel Airport
+1940018	Kiel Airport
+2199765	Leipzig/Halle Airport
+1340234	Leipzig–Altenburg Airport
+563091	Lufthansa
+602250	Lübeck Airport
+60569	Magdeburg–Cochstedt Airport
+419547	Mannheim City Airport
+1352642	Memmingen Airport
+195789	Merzbrück Airport
+275081	Munich-Riem Airport
+2486044	Munich Airport
+2081023	Münster Osnabrück International Airport
+2044095	Neubrandenburg Airport
+537658	Nuremberg Airport
+1219180	Paderborn Lippstadt Airport
+800452	Rechlin–Lärz Airfield
+665227	Rostock–Laage Airport
+431041	Saarbrücken Airport
+371571	Siegerland Airport
+1122350	Stralsund–Barth Airport
+389589	Stuttgart Airport
+1107859	Sylt Airport
+2658427	Wangerooge Airport
+283899	Weeze Airport
+1797560	Zweibrücken Airport
+
+
+129	INEX_XER-141	Universities in Catalunya
+606958	Spain	21.0
+659795	Autonomous University of Barcelona
+20904	Barcelona Graduate School of Economics
+1676931	Barcelona School of Informatics
+558932	Castelldefels School of Telecommunications and Aerospace Engineering
+152140	ESADE
+1502528	Higher education in Spain
+665054	Institut Barcelona d'Estudis Internacionals
+2835487	Institut d'Estudis Catalans
+1469743	List of universities in Spain
+891596	Open University of Catalonia
+2705367	Polytechnic University of Catalonia
+2199357	Pompeu Fabra University
+2304246	Ramon Llull University
+1364966	School of Engineering of Terrassa
+2254514	University of Barcelona
+1942490	University of Girona
+969965	University of Lleida
+1807676	University of the Balearic Islands
+2833214	Xarxa Vives d'Universitats
+
+
+130	INEX_XER-143	Hanseatic league in Germany in the Netherlands Circle
+669872	Germany	265.0
+1907755	Bochum
+2741201	Brakel, Germany
+9075	Breckerfeld
+2701735	Cologne
+727753	Dano-Hanseatic War (1426–35)
+1752751	Dortmund
+1904557	Duisburg
+2312941	Haltern am See
+1062923	Hamm
+1412812	Hanseatic League
+1334585	Hattingen
+771067	Herford
+2589493	Höxter
+1307609	Lemgo
+2444247	Minden
+2594241	Munster
+1984517	Neuss
+1880552	Osnabrück
+2078121	Paderborn
+2535999	Recklinghausen
+2457956	Soest, Germany
+678549	Unna
+543099	Warburg
+730156	Werl
+1096409	Wesel
+1975624	Winterberg
+
+
+134	INEX_XER-62	Neil Gaiman novels
+934559	The Sandman (Vertigo)	19.0
+1388457	A Study in Emerald
+2573386	A Walking Tour of the Shambles
+814847	American Gods
+1298284	Anansi Boys
+1638689	Blueberry Girl
+1181203	Coraline
+2479760	Crazy Hair
+2095136	Creatures of the Night (comics)
+2175728	Eternity's Wheel
+2192324	Good Omens
+173938	Hob Gadling
+1006787	InterWorld
+2089948	M Is for Magic
+1754380	Murder Mysteries
+37767	Neil Gaiman
+2839667	Neil Gaiman bibliography
+1344004	Neverwhere
+382278	Neverwhere (novel)
+38452	Odd and the Frost Giants
+2899413	Rose Walker
+855820	Sandman Midnight Theatre
+2703594	Stardust (novel)
+1645171	The Graveyard Book
+1321157	The Ocean at the End of the Lane
+934559	The Sandman (Vertigo)
+439113	The Silver Dream
+2716099	The Wolves in the Walls
+
+
+149	INEX_XER-95	Tom Hanks movies he plays a leading role
+737505	Los Angeles	34.0
+2295670	Angels & Demons (film)
+2367968	Apollo 13 (film)
+303712	Captain Phillips (film)
+168364	Cast Away
+612510	Catch Me If You Can
+2170933	Charlie Wilson's War
+2562526	Dragnet (1987 film)
+1319590	Every Time We Say Goodbye (film)
+1949161	Forrest Gump
+952530	Forrest Gump (character)
+761122	Joe Versus the Volcano
+543670	Larry Crowne
+1097430	Mazes and Monsters
+2351422	Nothing in Common
+2140930	Philadelphia (film)
+620636	Punchline (film)
+1385715	Road to Perdition
+2213610	Saving Mr. Banks
+152202	Saving Private Ryan
+385708	Sheriff Woody
+234253	Sleepless in Seattle
+834681	Splash (film)
+2529063	The 'Burbs
+2171701	The Bonfire of the Vanities (film)
+1519785	The Da Vinci Code (film)
+1858387	The Green Mile (film)
+2231564	The Man with One Red Shoe
+2691327	The Money Pit
+2667182	The Polar Express (film)
+1029173	The Terminal
+340252	Tom Hanks
+462373	Turner & Hooch
+763982	Volunteers (film)
+1528062	You've Got Mail
+
+
+158	QALD2_te-13	is the youngest player in the Premier League
+536772	United Kingdom	13.0
+1635133	Aaron Lennon
+2787759	George Campbell (footballer, born 1957)
+1386452	Jack Wilshere
+1429519	Jamie McCluskey
+1300826	Luke Freeman
+2416525	Mark Platts (footballer)
+1859270	Matthew Briggs
+1162525	Neil Finn (footballer)
+2236834	Phil Charnock
+64397	Tony Pulis
+1450208	Wayne Rooney
+
+
+159	QALD2_te-14	all members of Prodigy
+1281148	Big beat	20.0
+2384881	Gizz Butt
+223599	H.N.I.C. (Prodigy album)
+2403513	Hotride
+1000994	Jim Davies (musician)
+1250401	Keith Flint
+1674090	Leeroy Thornhill
+471302	Liam Howlett
+1217616	Maxim (musician)
+499960	Music for the Jilted Generation
+973885	Omen (The Prodigy song)
+265261	Ragged Flag
+32685	Rob Holliday
+2121467	The Prodigy
+673085	The Prodigy discography
+
+
+162	QALD2_te-19	all people that were born in Vienna and died in Berlin
+1003385	Marga Legal	15.0
+569382	Adolf Klein
+2091177	Eduard von Winterstein
+1670671	Guido von List
+2186149	Hans Fidesser
+1418300	Hilde Körber
+2042519	Hugo Flink
+198522	Karl Etlinger
+2040352	Karl Hellmer
+3088177	Peter Sturm
+1309445	Richard Thurnwald
+272562	Steffie Spira
+969872	Therese Grünbaum
+
+
+170	QALD2_te-29	all actors starring in movies directed by and starring William Shatner
+1125862	William Shatner	9.0
+2732463	Amy Acker
+2071298	Dan Gauthier
+2888488	Dan Martin (actor)
+2177656	Dick Van Patten
+1521487	Duane Whitaker
+2541532	Greg Evigan
+2413712	Groom Lake (film)
+1565352	John Prosky
+909108	Pray for the Wildcats
+621498	Rickey Medlocke
+2750006	Star Trek Memories
+3467181	Star Trek Movie Memories
+1901094	The Ashes of Eden
+61211	The Captains (film)
+2010299	The Return (Shatner novel)
+2063373	The Transformed Man
+294712	The Wild
+1393334	Tom Towles
+1513297	White Comanche
+1125862	William Shatner
+
+
+181	QALD2_te-44	cities does the Weser flow through
+669872	Germany	80.0
+2635773	Bremen
+2567280	Bremerhaven
+915936	Elsfleth
+2747110	Fulda (river)
+1267321	Hamelin
+776963	Hann. Münden
+1000427	Kassel
+1954091	Lesum
+2444247	Minden
+67363	Neuwerk
+3060092	Vesdre
+167193	Weser
+3099666	Weser Uplands
+1378818	Wietze (Örtze)
+
+
+182	QALD2_te-45	countries are connected by the Rhine
+703752	Netherlands	9.0
+664382	Austria
+1093445	Düsseldorf
+1497016	Glatt (Rhine)
+731203	Kingdom of France
+2636359	Liechtenstein
+857466	Nederrijn
+703752	Netherlands
+2472363	Rhine-Ruhr
+2047699	Rhine
+205887	Ruhr (river)
+1377678	States of Germany
+1587342	Three Countries Bridge
+
+
+187	QALD2_te-51	all Frisian islands that belong to the Netherlands
+1377716	Dutch people	15.0
+1830951	Ameland
+1340980	Bosch (island)
+2642404	Dunes of Texel National Park
+2890315	Frisia
+1214453	Frisian Islands
+2332105	Frisians
+2842395	German Bight
+1308951	Griend
+261606	Monnikenlangenoog
+1211573	Noorderhaaks
+1813235	North Frisian Islands
+2740577	Richel
+151961	Rif (island)
+1730145	Rottum (island group)
+1767609	Rottumeroog
+2571398	Rottumerplaat
+2407124	Schiermonnikoog
+876974	Simonszand
+1951297	Skarsterlân
+1356931	Texel
+967224	Vlieland
+2302178	Wangerooge
+2093648	West Frisian Islands
+1904952	Zuiderduintjes
+
+
+224	QALD2_tr-11	countries have places with more than two caves
+413987	Public university	1402.0
+1378015	Abkhazia
+732785	Australia
+664382	Austria
+1153636	Bedse Caves
+570692	Brazil
+540012	China
+533450	France
+1547538	Georgia (country)
+755593	Gibraltar
+665496	Greece
+212635	India
+639551	Italy
+1263292	Jamaica
+839972	Mexico
+407105	Philippines
+604781	Republic of Ireland
+727353	Serbia
+1485317	Slovenia
+1623468	South Africa
+667672	Turkey
+536772	United Kingdom
+630840	United States
+1094570	Venezuela
+2372121	Vietnam
+
+
+241	QALD2_tr-32	countries in the European Union adopted the Euro
+901941	European Union	21.0
+631939	Belgium
+1523582	Cyprus
+701667	Estonia
+60495	Estonian euro coins
+2897292	Euro
+78367	Euro coins
+2964088	European Central Bank
+959618	Eurozone
+634137	Finland
+665496	Greece
+3094101	History of the euro
+639551	Italy
+633038	Luxembourg
+703752	Netherlands
+669837	Portugal
+604781	Republic of Ireland
+1485317	Slovenia
+606958	Spain
+
+
+249	QALD2_tr-42	are the official languages of the Philippines
+407105	Philippines	1524.0
+223755	Commission on the Filipino Language
+3017685	Demographics of the Philippines
+3240061	Filipino alphabet
+1029020	Filipino language
+1078885	Filipinos
+48047	Hiligaynon language
+2732448	Ilocano language
+3025112	Languages of Asia
+671049	Languages of the Philippines
+1619218	Pangasinan language
+1148203	Philippine English
+787205	Philippine languages
+2768102	Spanish language in the Philippines
+304400	Tagalog language
+2472827	Waray language
+
+
+252	QALD2_tr-45	telecommunications organizations are located in Belgium
+1973933	Kobo Inc.	13.0
+745664	Aldi Talk
+1326821	BeTV (Belgium)
+1798546	Broadnet Holdings BV
+2621915	Option N.V.
+2440541	Proximus Group
+942732	Scarlet (company)
+2497767	Simyo
+1693599	Society for Worldwide Interbank Financial Telecommunication
+1479623	TV Vlaanderen Digitaal
+1528395	Telecommunications in Belgium
+946441	Telenet (Belgium)
+889264	Telindus
+
+
+253	QALD2_tr-47	is the highest place of Karakoram
+1344463	Karakoram	20.0
+1277626	Apsarasas Kangri
+2507712	Batura Muztagh
+43105	Central Karakoram National Park
+458304	Chogolisa
+2727826	Distaghil Sar
+3146071	Gasherbrum
+340099	Gasherbrum I
+597810	Gasherbrum II
+948829	Gasherbrum IV
+2854306	Hispar Muztagh
+141301	Hunza Peak
+1670164	Karakoram Highway
+443640	Karakoram Pass
+606586	Masherbrum
+461986	Masherbrum Mountains
+338641	Momhil Sar
+297151	Passu Sar
+3034994	Rimo Muztagh
+1015045	Saltoro Kangri
+1783907	Saltoro Mountains
+940743	Sherpi Kangri
+2193995	Sia Kangri
+2948745	Siachen Glacier
+573049	Skyang Kangri
+589299	Yutmaru Sar
+
+
+258	QALD2_tr-53	all presidents of the United States
+630840	United States	1400.0
+834645	Abraham Lincoln
+2408216	Andrew Jackson
+2160545	Andrew Johnson
+772255	Barack Obama
+2541578	Benjamin Harrison
+465307	Bill Clinton
+403481	Calvin Coolidge
+511952	Chester A. Arthur
+1187793	Dwight D. Eisenhower
+1477593	Franklin D. Roosevelt
+1490242	Franklin Pierce
+555534	George H. W. Bush
+1453422	George W. Bush
+600382	George Washington
+38220	Gerald Ford
+105368	Grover Cleveland
+305378	Harry S. Truman
+1028015	Herbert Hoover
+3000616	Historical rankings of Presidents of the United States
+44819	James A. Garfield
+1527466	James Buchanan
+2672785	James K. Polk
+2403879	James Madison
+2406070	James Monroe
+1874635	Jimmy Carter
+2373395	John Adams
+1130120	John F. Kennedy
+2407160	John Quincy Adams
+2639031	John Tyler
+3397416	List of Presidents of the United States
+1821050	List of Presidents of the United States by age
+2872782	List of United States presidential assassination attempts and plots
+952988	Lyndon B. Johnson
+2434371	Martin Van Buren
+1460574	Millard Fillmore
+581091	President of the United States
+44686	Richard Nixon
+1350387	Ronald Reagan
+2573396	Rutherford B. Hayes
+1582217	Theodore Roosevelt
+169600	Ulysses S. Grant
+1437340	United States presidential election in Alabama, 1984
+3010952	United States presidential line of succession
+1198443	Warren G. Harding
+2580015	William Henry Harrison
+2440020	William Howard Taft
+1776841	William McKinley
+2537173	Woodrow Wilson
+2678220	Zachary Taylor
+
+
+261	QALD2_tr-57	List all episodes of the first season of the HBO television series The Sopranos
+1704225	HBO	22.0
+2393121	...To Save Us All from Satan's Power
+2728758	46 Long
+1299959	A Hit Is a Hit
+2629431	All Due Respect (The Sopranos)
+557417	Boca (The Sopranos)
+248351	College (The Sopranos)
+186074	Denial, Anger, Acceptance
+882173	Down Neck
+798566	Funhouse (The Sopranos)
+551961	I Dream of Jeannie Cusamano
+117911	Isabella (The Sopranos)
+2582476	James Gandolfini
+3455414	List of The Sopranos episodes
+1294999	Live Free or Die (The Sopranos)
+1654594	Meadowlands (The Sopranos)
+2745704	Members Only (The Sopranos)
+2639658	No Show
+150829	Nobody Knows Anything
+288697	Pax Soprana
+2497558	Remember When (The Sopranos)
+2694728	The Legend of Tennessee Moltisanti
+1675756	The Sopranos
+1820333	The Sopranos (episode)
+2690867	The Sopranos (season 5)
+2028105	The Telltale Moozadell
+2170368	Two Tonys
+
+
+265	QALD2_tr-61	mountains are higher than the Nanga Parbat
+25158	Lingtren	13.0
+2481658	Cho Oyu
+1691144	Dhaulagiri
+1302080	Himalayas
+1574304	K2
+880391	Kangchenjunga
+782513	Lhotse
+1848092	Makalu
+2437960	Manaslu
+1809976	Mount Everest
+2169537	Rakhiot Peak
+461100	Rupal Peak
+1075687	Silberzacken
+
+
+272	QALD2_tr-70	all films produced by Hal Roach
+95210	Bear Facts (film)	483.0
+389418	45 Minutes from Hollywood
+2480712	A Chump at Oxford
+2203768	A Foozle at the Tee Party
+2262775	A Gasoline Wedding
+233762	A Jazzed Honeymoon
+1703601	A Lad an' a Lamp
+430864	A Man About Town
+1240720	A Mixup for Mazie
+756612	A Pleasant Journey
+2298291	A Quiet Street
+685551	A Sailor-Made Man
+2356059	A Sammy in Siberia
+2244238	A Tough Winter
+437697	About Face (1942 film)
+1284417	All Aboard (film)
+59324	Along Came Auntie
+1415406	Among Those Present
+1431051	An Eastern Westerner
+1325475	An Ozark Romance
+2576609	Angora Love
+582090	Anniversary Trouble
+2313018	Another Fine Mess
+2388459	Another Wild Idea
+2384976	Any Old Port!
+1717048	Arbor Day (film)
+1690035	Ask Father
+627261	Ask Grandma
+2511078	At the Old Stage Door
+888104	Babes in Toyland (1934 film)
+572566	Baby Brother
+605603	Baby Clothes
+1173834	Back Stage (1923 film)
+668968	Back to the Woods (1918 film)
+2355537	Bacon Grabbers
+5894	Bargain Day
+2724647	Barnum & Ringling, Inc.
+876810	Bashful (film)
+222161	Be Big!
+2350807	Be My Wife (1919 film)
+112383	Be Your Age
+95210	Bear Facts (film)
+1279082	Bear Shooters
+2491465	Beat It (film)
+1445560	Beau Hunks
+1221673	Bedtime Worries
+2680200	Before Breakfast
+150081	Beginner's Luck
+870621	Below Zero (1930 film)
+603602	Berth Marks
+2266332	Better Movies
+2547908	Beyond His Fondest Hopes
+658571	Big Business (1924 film)
+2760289	Big Ears
+1674484	Billy Blazes, Esq.
+2371828	Birds of a Feather (1917 film)
+40010	Birthday Blues
+1327147	Bliss (1917 film)
+1050011	Block-Heads
+1032946	Blotto (film)
+2212900	Bonnie Scotland
+940263	Bored of Education
+2302577	Bouncing Babies
+1596935	Boxing Gloves (film)
+2253462	Boys Will Be Joys
+2321206	Boys to Board
+1246764	Brats
+390182	Bride and Gloom (film)
+1849897	Bring Home the Turkey
+1048936	Broadway Limited (film)
+361941	Bromo and Juliet
+2470358	Brooklyn Orchid
+2724425	Brothers Under the Chin
+1608017	Bughouse Bellhops
+1096433	Bumping into Broadway
+1761713	Buried Treasure (1926 film)
+43054	Busy Bodies
+2301164	By the Sad Sea Waves
+2167206	Call of the Cuckoo
+1666895	Came the Brawn
+1097433	Canned Fishing
+2403647	Captain Fury
+1578741	Captain Kidd's Kids
+192161	Cat, Dog & Co.
+1574860	Chicken Feed
+2594549	Chickens Come Home
+2120482	Choo-Choo!
+2760211	Chop Suey & Co.
+190412	Circus Fever
+2428574	Clubs Are Trump
+1866444	Collars and Cuffs
+2645700	Come Clean (film)
+929418	Commencement Day
+1202667	Count Your Change
+1230111	Count the Votes
+2316263	County Hospital (film)
+2474808	Crack Your Heels
+1761500	Cradle Robbers
+2515808	Crazy House (1928 film)
+746036	Crazy like a Fox (1926 film)
+1121440	Curley (film)
+676471	Derby Day (1923 film)
+377777	Dirty Work (1933 film)
+663131	Divot Diggers
+656835	Dog Days (1925 film)
+750549	Dog Heaven
+959237	Dog Shy
+944212	Dogs is Dogs
+950721	Dogs of War (film)
+2603365	Don't Shove
+1633357	Double Whoopee
+2336862	Dr. Jack
+1354457	Duck Soup (1927 film)
+841859	Edison, Marconi & Co.
+626261	Election Day (film)
+738244	Eve's Love Letters
+1686445	Every Man for Himself (1924 film)
+950714	Fair and Muddy
+1339710	Fall In
+2401562	Fast Company (1924 film)
+2538092	Fast Freight (film)
+694598	Feed 'em and Weep
+1624546	Fire Fighters (film)
+1716125	Fireman Save My Child (1918 film)
+2515291	Fish Hooky
+2776685	Fishy Tales
+1169861	Fluttering Hearts
+324010	Fly My Kite
+2015350	Flying Elephants
+462721	Flying with Music
+1777986	Follow the Crowd (film)
+2483042	For Pete's Sake!
+1389188	Forgotten Babies
+1126022	Framing Youth
+1119763	Free Eats
+1797096	Free Wheeling
+1749157	Fresh from the Farm
+1289157	From Hand to Mouth
+1229317	From Laramie to London
+431410	From Soup to Nuts
+2679347	Frozen Hearts
+2643577	Gas and Air (film)
+2181626	General Spanky
+245150	Get 'Em Young
+1098669	Get Out and Get Under
+1427135	Giants vs. Yanks
+2195151	Giving Them Fits
+2181838	Glove Taps
+962594	Going! Going! Gone!
+2542587	Going Bye-Bye!
+733965	Grandma's Boy (1922 film)
+2542940	Great While It Lasted
+2407224	Growing Pains (1928 film)
+2506059	Habeas Corpus (1928 film)
+1724258	Hal Roach
+1615797	Hats Off (1927 film)
+1762878	Haunted Spooks
+814215	He Leads, Others Follow
+1728152	Hear 'Em Rave
+1046407	Hearts Are Thumps
+2075819	Heebee Jeebees
+774070	Helping Grandma
+1696995	Helpmates
+1752331	Her Dangerous Path
+1786225	Hey There!
+1498719	Hi'-Neighbor!
+1296886	Hide and Shriek
+197778	High Society (1924 film)
+310466	His Only Father
+672853	His Royal Slyness
+1329370	Hit Him Again
+1829793	Hog Wild (1930 film)
+2436638	Honky Donkey
+392793	Hook and Ladder (1932 film)
+707985	Hoot Mon!
+2319092	Hustling for Health
+196596	I'm on My Way (film)
+1806469	I Do (1921 film)
+1092118	It's a Bear
+2360798	It's a Gift (1923 film)
+1148335	It's a Wild Life
+1089307	Jubilo, Jr.
+2657969	July Days (film)
+2083967	Just Dropped In
+2316603	Just Neighbors
+1821723	Just Nuts
+2081080	Just Rambling Along
+1994962	Kelly the Second
+564010	Kicked Out (film)
+566213	Kicking the Germ Out of Germany
+768844	Kill or Cure (1923 film)
+712721	Laughing Gravy
+500544	Lazy Days (film)
+2211180	Leave 'Em Laughing
+1251717	Let's Go (film)
+1679119	Liberty (1929 film)
+149340	Little Daddy
+2650139	Little Mother (1929 film)
+720095	Little Sinner
+2436049	Lodge Night
+633049	Lonesome Luke's Honeymoon
+635252	Lonesome Luke's Lively Life
+268359	Lonesome Luke's Lovely Rifle
+664393	Lonesome Luke's Wild Women
+638495	Lonesome Luke, Circus King
+662251	Lonesome Luke, Lawyer
+663297	Lonesome Luke, Mechanic
+666581	Lonesome Luke, Messenger
+665504	Lonesome Luke, Plumber
+669848	Lonesome Luke, Social Gangster
+670914	Lonesome Luke Leans to the Literary
+299220	Lonesome Luke Loses Patients
+696164	Lonesome Luke on Tin Can Alley
+1021764	Long Fliv the King
+938032	Look Out Below
+940335	Look Pleasant, Please
+373199	Love, Laughs and Lather
+108220	Love 'Em and Feed 'Em
+2169382	Love Business
+532565	Love My Dog
+132230	Luke's Busy Day
+157263	Luke's Double
+158363	Luke's Fatal Flivver
+159467	Luke's Fireworks Fizzle
+156220	Luke's Late Lunchers
+161694	Luke's Lost Lamb
+160580	Luke's Lost Liberty
+166200	Luke's Movie Muddle
+162828	Luke's Newsie Knockout
+163959	Luke's Preparedness Preparations
+193861	Luke's Shattered Sleep
+165091	Luke's Society Mixup
+190552	Luke's Speedy Club Life
+191667	Luke's Trolley Troubles
+192744	Luke's Washful Waiting
+198269	Luke, Crystal Gazer
+196073	Luke, Patient Provider
+194983	Luke, Rank Impersonator
+197185	Luke, the Candy Cut-Up
+200439	Luke, the Chauffeur
+199349	Luke, the Gladiator
+224875	Luke Does the Midway
+230303	Luke Foils the Villain
+233601	Luke Laughs Last
+262193	Luke Locates the Loot
+259991	Luke Lugs Luggage
+263337	Luke Pipes the Pippins
+264377	Luke Rides Roughshod
+293160	Luke Wins Ye Ladye Faire
+2499651	Luke and the Bang-Tails
+295306	Luke and the Bomb Throwers
+296404	Luke and the Mermaids
+300768	Luke and the Rural Roughnecks
+1437623	Madame Mystery
+2046432	Mail and Female
+276512	Mama's Little Pirate
+2617275	Me and My Pal (1933 film)
+823914	Merrily We Live
+396847	Mighty Like a Moose
+1827956	Mike Fright
+76517	Miss Polly
+1800849	Moan and Groan, Inc.
+1190531	Monkey Business (1926 film)
+2419427	Mother's Joy
+1767026	Move On (1917 film)
+1034419	Mr. Cinderella
+530860	Mush and Milk
+1698618	My Little Margie
+1659666	Near Dublin
+1661283	Neighborhood House (film)
+34594	Never Touched Me
+1843480	Never Weaken
+94713	Next Aisle Over
+1413659	Niagara Falls (1941 film)
+2475897	Night 'n' Gales
+1134137	No Noise
+1518112	No Place Like Jail
+2398877	Nobody's Baby (1937 film)
+1148819	Noisy Noises
+1806066	Nothing but Trouble (1918 film)
+2032157	Now I'll Tell One
+999948	Now or Never (film)
+1783999	Off the Trolley
+1294496	Official Officers
+1372717	Oliver the Eighth
+2282447	Olympic Games (film)
+1013776	On the Fire
+1041165	On the Front Page
+1672013	On the Loose (1931 film)
+1487917	On the Wrong Trek
+1427824	One Good Turn (1931 film)
+39941	One Hour Married
+2019692	One Million B.C.
+2072950	One Terrible Day
+333804	One Wild Ride
+1425983	Oranges and Lemons (film)
+3162375	Our Gang
+495817	Our Gang (film)
+496894	Our Gang Follies of 1936
+1126455	Our Gang Follies of 1938
+887836	Our Relations
+496407	Our Wife
+337638	Over the Fence (1917 film)
+1033985	Pardon Us
+2443593	Pass the Gravy
+141798	Pay Your Dues
+756048	Pay as You Exit
+1396855	Peculiar Patients' Pranks
+1538827	Perfect Day (1929 film)
+2680469	Pick a Star
+233812	Pick and Shovel
+2245525	Pinched
+2740722	Pipe the Whiskers
+277555	Pistols for Breakfast
+2743409	Playin' Hookey
+13781	Postage Due
+926499	Pups Is Pups
+2451792	Putting Pants on Philip
+1895117	Raggedy Rose
+1211760	Ragtime Snap Shots
+2126611	Railroadin'
+427726	Rainbow Island
+2370819	Rainy Days (film)
+1046637	Readin' and Writin'
+2057504	Reunion in Rhythm
+1105606	Ring Up the Curtain
+1929064	Road Show (film)
+2322834	Roamin' Holiday
+1052239	Roughest Africa
+1945574	Rupert of Hee Haw
+2047509	Ruses, Rhymes and Roughnecks
+1923697	Rushin' Ballet
+218179	Safety Last!
+1730037	Sailors, Beware!
+2667807	Saps at Sea
+850348	Saturday's Lesson
+958405	Saturday Morning (1922 film)
+1559961	Save the Ship
+516351	Say It with Babies
+1396268	School's Out (1930 film)
+1468090	School Begins
+2061183	Scorching Sands
+111377	Scram!
+1448418	Second Childhood (film)
+1510639	Seein' Things
+2619894	Seeing the World
+1756312	She Loves Me Not (1918 film)
+1591489	Shiver My Timbers
+1595846	Shivering Shakespeare
+1620838	Shivering Spooks
+2407307	Shootin' Injuns
+1186151	Short Kilts
+668104	Short Orders
+324922	Shrimps for a Day
+647117	Sic 'Em, Towser
+1553903	Slipping Wives
+890202	Small Talk (film)
+2329224	Smithy (1924 film)
+730237	Soft Money (film)
+593085	Some Baby
+1173812	Sons of the Desert
+252882	Spanky (film)
+2134360	Spit-Ball Sadie
+1533207	Spook Spoofing
+2372768	Spooky Hooky
+2404658	Spring Fever (1919 film)
+2538585	Stage Fright (1923 film)
+1048806	Step Lively (1917 film)
+2793222	Stop! Luke! Listen!
+401220	Sunday Calm
+1764624	Swat the Crook
+1821824	Swing Your Partners
+2736261	Swiss Miss (film)
+15131	Tanks a Million
+225066	Taxi, Mister
+1810795	Teacher's Beau
+2813544	Teacher's Pet (1930 film)
+1879288	Ten Years Old
+1800325	Terribly Stuck Up
+532841	That's My Wife (1929 film)
+60089	The Awful Tooth
+1792993	The Battle of the Century
+1787418	The Big Idea (1917 film)
+1940715	The Big Show (1923 film)
+3322	The Big Town (1925 film)
+491710	The Bohemian Girl (1936 film)
+546528	The Buccaneers (film)
+1178779	The Call of the Wild (1923 film)
+2122934	The Champeen
+1854179	The Chimp
+1730444	The City Slicker
+1544146	The Cobbler (1923 film)
+699322	The Cow's Kimona
+1058844	The Devil's Brother
+2347927	The Devil with Hitler
+1065280	The Dutiful Dub
+2344815	The Finishing Touch
+1163181	The First Round-Up
+1193887	The First Seven Years
+1825132	The Fixer Uppers
+1104505	The Flirt
+1554605	The Fourth Alarm
+42723	The Glorious Fourth (film)
+1162776	The Haunted Honeymoon
+121950	The Holy Terror (1929 film)
+1216684	The Honorable Mr. Buggs
+1133663	The Hoose-Gow
+1273244	The Housekeeper's Daughter
+2593657	The Kid from Borneo
+616908	The Laurel-Hardy Murder Case
+810394	The Live Ghost
+974604	The Love Bug (1925 film)
+655401	The Lucky Corner
+1699176	The Marathon (film)
+958190	The McGuerins from Brooklyn
+2395727	The Midnight Patrol
+1849666	The Music Box
+757166	The Mysterious Mystery!
+961519	The Nickel-Hopper
+1984058	The Non-Stop Kid
+513212	The Noon Whistle
+1940878	The Old Wallop
+799320	The Pigskin Palooka
+976413	The Pinch Singer
+1534471	The Pooch
+576619	The Rajah (film)
+1901784	The Second Hundred Years (film)
+146605	The Smile Wins
+2121033	The Soilers
+1602413	The Spanking Age
+679379	The Sun Down Limited
+2212965	The Timber Queen
+2658366	The Whole Truth (1923 film)
+1424531	Their First Mistake
+87549	Their Purple Moment
+1733474	Them Thar Hills
+1194938	Them Was the Happy Days!
+890509	There Goes My Heart (film)
+559887	They Go Boom
+2062997	Thicker than Water (1935 film)
+261928	Three Men in a Tub
+2362038	Three Smart Boys
+1098220	Thundering Fleas
+1257194	Tinkering with Trouble
+2222625	Tired Business Men
+1394802	Tit for Tat (film)
+532881	Topper (film)
+1984834	Topper Returns
+2054815	Topper Takes a Trip
+1445642	Towed in a Hole
+626923	Turnabout (film)
+2641690	Twice Two
+2216574	Two-Gun Gussie
+1216164	Two-Time Mama
+1943595	Two Knights from Brooklyn
+2284182	Two Scrambled
+2169245	Two Too Young
+1569271	Unaccustomed As We Are
+1834890	Uncle Tom's Uncle
+1895245	Wandering Papas
+2328444	Wanted – $5,000
+739596	War Feathers
+2698236	Washee Ironee
+407738	Way Out West (1937 film)
+1332290	We Faw Down
+2653688	We Never Sleep (film)
+255074	When the Wind Blows (1930 film)
+1274899	Whispering Whoopee
+907090	White Eagle (1922 serial)
+2432904	White Wings
+2235207	Who Killed Doc Robbin
+870909	Why Girls Love Sailors
+2228067	Why Girls Say No
+2234588	Why Men Work
+735039	Wide Open Spaces (1924 film)
+756042	Wiggle Your Ears
+2767179	Wild Papa
+1414074	Wild Poses
+1429607	Willie Runs the Park
+2103976	With Love and Hisses
+2441035	Wrong Again
+1792255	Yale vs. Harvard
+2696884	Yes, Yes, Nanette
+2071532	You're Darn Tootin'
+524440	Young Mr. Jazz
+880326	Young Sherlocks
+452284	Your Own Back Yard
+2457701	Zeb vs. Paprika
+319815	Zenobia (film)
+
+
+278	QALD2_tr-77	music albums contain the song Last Christmas
+1309884	Last Christmas	15.0
+1746087	Christmas Kisses (EP)
+2603785	Christmasville
+37193	Classic Christmas (Joe McElderry album)
+859699	Crazy Frog Presents More Crazy Hits
+1648474	Disco Defenders
+722804	Iceland (album)
+1309884	Last Christmas
+1765871	Now – The Christmas Album
+2181569	Santa Claus Lane
+2204611	The Best Christmas... Ever!
+757655	The Collective (The Collective album)
+636875	Whigfield (album)
+2809947	Whigfield II
+
+
+286	QALD2_tr-84	all movies with Tom Cruise
+667393	Ask the Dust (film)	23.0
+1615455	A Few Good Men
+1399688	All the Right Moves (film)
+877061	Born on the Fourth of July (film)
+1014101	Cocktail (1988 film)
+75308	Collateral (film)
+2059411	Days of Thunder
+140590	Ethan Hunt
+1782879	Far and Away
+129237	Interview with the Vampire (film)
+2270138	Jerry Maguire
+1812670	Knight and Day
+841682	Legend (1985 film)
+1956674	Lions for Lambs
+852275	Losin' It
+2777448	Magnolia (film)
+2411403	Minority Report (film)
+769807	Rain Man
+1173190	Red Dawn (2012 film)
+2332069	Risky Business
+368471	Suspect Zero
+1709846	Taps (film)
+2612034	The Color of Money
+970871	The Firm (1993 film)
+2011975	The Last Samurai
+2783869	The Outsiders (film)
+2090972	Tom Cruise
+1954663	Top Gun
+264724	Valkyrie (film)
+319683	Vanilla Sky
+1836546	War of the Worlds (2005 film)
+
+
+310	SemSearch_ES-12	austin texas
+630840	United States	2282.0
+1321059	Austin, Texas
+1094561	Austin County, Texas
+1107287	Austin–Bergstrom International Airport
+2256952	Brentwood, Austin, Texas
+1503576	Copperfield, Austin, Texas
+680382	Crestview, Austin, Texas
+3440385	Dove Springs, Austin, Texas
+2965338	Downtown Austin
+2098702	French Legation
+2733258	Hyde Park (Austin, Texas)
+596826	Lady Bird Lake
+678186	Oak Hill, Austin, Texas
+2088287	Republic of Texas
+2089513	Sixth Street (Austin, Texas)
+833184	Texas
+1580463	Texas Ranger Division
+1858757	University of Texas at Austin
+
+
+332	SemSearch_ES-22	city of charlotte
+1350563	Charlotte, North Carolina	16.0
+2201185	Ballantyne (Charlotte neighborhood)
+2524663	Cathedral of Saint Patrick (Charlotte, North Carolina)
+990495	Charlotte, Michigan
+1350563	Charlotte, North Carolina
+2005989	Charlotte, Texas
+3182583	Charlotte-Mecklenburg Police Department
+2632164	Charlotte City Council
+1165005	Charlotte County Public Schools
+1117875	Charlotte Douglas International Airport
+975492	Charlotte center city
+2559109	Charlotte metropolitan area
+1325973	Eastland (Charlotte neighborhood)
+1361995	Eastland Mall (Charlotte, North Carolina)
+3097832	List of Charlotte neighborhoods
+2188794	Mecklenburg County, North Carolina
+723409	SouthPark (Charlotte neighborhood)
+2404865	University City (Charlotte neighborhood)
+2761115	University of North Carolina at Charlotte
+
+
+356	SemSearch_ES-5	Scott County
+630840	United States	136.0
+1807422	Lake Scott State Park
+840526	Murphy Lake (Scott County, Minnesota)
+1418317	Pleasant Valley Township, Scott County, Iowa
+1681988	Scott County, Arkansas
+365128	Scott County, Illinois
+2182083	Scott County, Indiana
+2800145	Scott County, Iowa
+452578	Scott County, Kansas
+649796	Scott County, Kentucky
+722831	Scott County, Minnesota
+631249	Scott County, Mississippi
+1624801	Scott County, Missouri
+1321052	Scott County, Tennessee
+80974	Scott County, Virginia
+1944597	Scott County Courthouse (Iowa)
+1969958	Scott County Courthouse (Kentucky)
+1945737	Scott County Courthouse (Missouri)
+3079834	Scott County School District (Mississippi)
+1514526	Scott Township, Vanderburgh County, Indiana
+
+
+359	SemSearch_ES-53	lynchburg virginia
+2727917	Virginia	15.0
+883852	Academy of Music (Lynchburg, Virginia)
+2618477	Armstrong Elementary School (Lynchburg, Virginia)
+613695	Aviary (Lynchburg, Virginia)
+210838	Battle of Lynchburg
+2517533	Centerview (Lynchburg, Virginia)
+1353783	Federal Hill Historic District (Lynchburg, Virginia)
+695948	Fifth Street Historic District
+1000766	Fort Early and Jubal Early Monument
+372245	Greater Lynchburg Transit Company
+1148848	Heritage High School (Lynchburg, Virginia)
+340933	Locust Grove (Lynchburg, Virginia)
+2746392	Lynchburg, Virginia
+633201	Lynchburg, Virginia metropolitan area
+1529668	Lynchburg College
+1560129	Lynchburg Hospital
+1591592	Lynchburg Regional Airport
+3439618	National Register of Historic Places listings in Lynchburg, Virginia
+168974	Old City Cemetery (Lynchburg, Virginia)
+2341368	Rosedale (Lynchburg, Virginia)
+615209	Sandusky House (Lynchburg, Virginia)
+2228274	St. Paul's Church (Lynchburg, Virginia)
+1848679	U.S. Route 460 in Virginia
+2504198	Virginia State Route 128
+
+
+373	SemSearch_ES-71	richmond virginia
+630840	United States	1622.0
+1893736	Broad Street (Richmond, Virginia)
+2460217	Carver, Richmond, Virginia
+1075227	Chesterfield County, Virginia
+1969335	City Stadium (Richmond)
+1458312	Greater Richmond Region
+2860273	Neighborhoods of Richmond, Virginia
+3474115	Port of Richmond (Virginia)
+557198	Richmond, Virginia
+1621734	Richmond Coliseum
+149173	Richmond County, Virginia
+2310695	Richmond International Airport
+2862665	Richmond Virginians (1884)
+2945474	Richmond in the American Civil War
+3344343	St. John's Episcopal Church (Richmond, Virginia)
+1651993	U.S. Route 33 in Virginia
+2040164	U.S. Route 360
+1182729	University of Richmond
+2727917	Virginia
+558662	Virginia State Route 147
+635268	Virginia State Route 161
+2156654	West End (Richmond, Virginia)
+
+
+381	SemSearch_ES-80	sonny and cher
+2403747	Sonny & Cher	30.0
+1961627	A Cowboy's Work Is Never Done
+2654224	All I Ever Need Is You (1971 Sonny & Cher album)
+2655345	All I Ever Need Is You (1990 Sonny & Cher album)
+2679098	All I Ever Need Is You (song)
+2791149	Baby Don't Go
+706812	Baby Don't Go – Sonny & Cher and Friends
+1477983	But You're Mine
+778000	Chaz Bono
+1129373	Cher
+1754219	Cher albums discography
+2789750	Cher filmography
+2278562	Chér (1966 album)
+1812266	Foxy Lady (Cher album)
+642426	Greatest Hits (Sonny & Cher album)
+50287	I Got You Babe
+809895	In Case You're in Love
+2446318	Laugh at Me
+1927911	Little Man (Sonny & Cher song)
+208572	Look at Us
+1265457	Mama Was a Rock and Roll Singer, Papa Used to Write All Her Songs
+1234812	Sonny & Cher's Greatest Hits
+2403747	Sonny & Cher
+610854	Sonny & Cher Live
+52047	Sonny & Cher discography
+107797	Sonny Bono
+1583774	The Beat Goes On (Sonny & Cher song)
+2136127	The Best of Sonny & Chér
+1392980	The Definitive Pop Collection (Sonny & Cher album)
+1599528	The Sonny & Cher Comedy Hour
+828357	The Sonny Side of Chér
+474634	The Two of Us (Sonny & Cher album)
+1167585	The Very Best of Cher
+55306	The Wondrous World of Sonny & Chér
+2251798	Where Do You Go (Cher song)
+
+
+399	SemSearch_LS-1	Apollo astronauts walked on the Moon
+630840	United States	14.0
+2171696	Alan Bean
+1023014	Alan Shepard
+2536000	Alfred Worden
+2758243	Apollo 11
+2871604	Apollo 12
+3108650	Apollo 14
+2995021	Apollo 16
+2906700	Apollo 17
+1519286	Apollo program
+305284	Buzz Aldrin
+2285106	David Scott
+1533368	Edgar Mitchell
+305478	Fred Haise
+701074	Harrison Schmitt
+1498299	James Irwin
+2662038	John Young (astronaut)
+825469	Michael Collins (astronaut)
+2849284	NASA Astronaut Group 3
+36689	Neil Armstrong
+1821315	Pete Conrad
+538825	Rusty Schweickart
+3147615	Tranquility Base
+
+
+417	SemSearch_LS-3	astronauts landed on the Moon
+630840	United States	12.0
+781888	A Man on the Moon
+2171696	Alan Bean
+1023014	Alan Shepard
+2871604	Apollo 12
+2906700	Apollo 17
+305284	Buzz Aldrin
+554829	Charles Duke
+2285106	David Scott
+1533368	Edgar Mitchell
+233784	Eugene Cernan
+1000637	Gregory H. Johnson
+701074	Harrison Schmitt
+1498299	James Irwin
+2662038	John Young (astronaut)
+2011957	Moon landing
+36689	Neil Armstrong
+3147615	Tranquility Base
+
+
+423	SemSearch_LS-35	republics of the former Yugoslavia
+727353	Serbia	179.0
+1290653	Belgrade
+1519152	Bosnia and Herzegovina
+2191152	Breakup of Yugoslavia
+1827043	Croats
+1832016	Macedonia naming dispute
+1554064	Montenegro
+1514712	Republic of Macedonia
+2078816	Republic of Serbia (1992–2006)
+1916144	Serbia and Montenegro
+806837	Serbs
+215778	Social Democratic Union of Macedonia
+2701810	Socialist Autonomous Province of Kosovo
+1275350	Socialist Federal Republic of Yugoslavia
+2120615	Socialist Republic of Bosnia and Herzegovina
+1272804	Socialist Republic of Croatia
+2852756	Socialist Republic of Montenegro
+2613867	Socialist Republic of Serbia
+1681033	Socialist Republic of Slovenia
+3157503	Vardar Macedonia
+2046683	Yugoslav Wars
+2823340	Yugoslavia
+
+
+424	SemSearch_LS-36	revolutionaries of 1959 in Cuba
+1886672	Fidel Castro	9.0
+3049380	26th of July Movement
+3302347	Abel Santamaría
+2056667	Battle of La Plata
+518192	Battle of Yaguajay
+2134523	Camilo Cienfuegos
+1600411	Carlos Manuel Piedra
+990296	Celia Sánchez
+2516305	Che Guevara
+2593053	Communist Party of Cuba
+1918174	Cuban Revolution
+1297163	Cuban Revolutionary Armed Forces
+1886672	Fidel Castro
+1079017	Gustavo Arcos
+1244375	Isidoro Malmierca Peoli
+1795466	Juan Almeida Bosque
+2430831	Manuel Ray Rivero
+1677036	Manuel Urrutia Lleó
+1991810	Osvaldo Dorticós Torrado
+399234	Prensa Latina
+2121948	Raúl Roa García
+1936257	Vilma Espín
+
+
+427	SemSearch_LS-39	ten ancient Greek city kingdoms of Cyprus
+1523582	Cyprus	62.0
+3050126	Amathus
+1558857	Ancient Greece
+3439838	Ancient history of Cyprus
+698496	Crete
+1523582	Cyprus
+621487	Famagusta
+2343777	Kingdom of Cyprus
+1260610	Kition
+1259859	Kyrenia
+572132	Lapithos
+903796	Paphos
+682649	Roman Cyprus
+3300191	Salamis, Cyprus
+
+
+432	SemSearch_LS-44	languages do they speak in afghanistan
+2380893	Afghanistan	8.0
+2380893	Afghanistan
+1713175	Dari language
+2939394	Demographics of Afghanistan
+1515756	Hazaras
+781161	Hindki
+2726286	Kho people
+3025972	Languages of Afghanistan
+59608	Moghol people
+2203226	Munji language
+198745	Pashayi people
+2450970	Pashto
+1423459	Persian language
+454056	Sasooli
+400092	Tregami language
+
+
+437	SemSearch_LS-6	boroughs of New York City
+732101	New York City	485.0
+2887599	Borough (New York City)
+3197433	Borough (United States)
+273911	Borough Park, Brooklyn
+1044041	Borough of Manhattan Community College
+978034	Borough president
+338256	Brooklyn
+640222	Brooklyn Borough Hall
+2025620	Manhattan
+2844472	Midtown Manhattan
+2442069	New York City Council
+366752	Queens
+1980457	Queens Center
+98165	Riverdale, Bronx
+398941	Staten Island
+2996722	Upper Manhattan
+1289097	Verrazano–Narrows Bridge
+
+
+442	TREC_Entity-10	Campuses of Indiana University
+630840	United States	70.0
+1065686	Department of Central Eurasian Studies (Indiana University)
+2519725	Indiana State University
+1412462	Indiana University
+2113539	Indiana University Bloomington
+2310265	Indiana University East
+2348488	Indiana University High School
+822670	Indiana University Kokomo
+371806	Indiana University Maurer School of Law
+310511	Indiana University Northwest
+1354359	Indiana University Robert H. McKinney School of Law
+3193920	Indiana University School of Education
+412830	Indiana University School of Liberal Arts at IUPUI
+183717	Indiana University School of Medicine
+476448	Indiana University South Bend
+443504	Indiana University Southeast
+1611546	Indiana University of Pennsylvania
+506087	Indiana University – Purdue University Columbus
+480806	Indiana University – Purdue University Fort Wayne
+343552	Indiana University – Purdue University Indianapolis
+716335	Kelley School of Business
+161230	National Sports Journalism Center
+
+
+449	TREC_Entity-18	Members of the band Jefferson Airplane
+733740	Hot Tuna	29.0
+3267304	Bob Harvey (musician)
+274429	David Freiberg
+625634	Early Flight
+2259802	Grace Slick
+591104	Jack Casady
+1749403	Jefferson Airplane
+2081270	Jefferson Airplane (album)
+2509391	Jefferson Airplane Loves You
+2565868	Jefferson Airplane Takes Off
+3314075	Jefferson Airplane discography
+1214911	Joey Covington
+2170217	John Barbata
+1974762	Jorma Kaukonen
+496745	KBC Band
+2183905	Marty Balin
+1333214	Papa John Creach
+2594175	Paul Kantner
+2941144	Peter Kaukonen
+2038584	She Has Funny Cars
+1332865	Signe Toly Anderson
+1090234	Skip Spence
+420886	Somebody to Love (Jefferson Airplane song)
+459588	Spencer Dryden
+1278773	The Ballad of You and Me and Pooneil
+2091026	The Essential Jefferson Airplane
+169691	Through the Looking Glass (Jefferson Airplane album)
+2047717	White Rabbit (Jefferson Airplane song)
+
+
