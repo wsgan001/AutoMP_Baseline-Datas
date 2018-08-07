@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class DataGen_SYS {
+public class DataGen_Yago {
 
 	private static Integer RandPathLen = 0;
 	private static Integer TrainLim = 0;
@@ -596,12 +596,6 @@ public class DataGen_SYS {
 
         try {
             Sta_FW = new FileWriter(new File("./datas/toys/toydata/Yago_Statistic.txt"));
-            //dbpedia
-//            Doit("dbpedia_11b");
-//            Doit("dbpedia_12b");
-//            Doit("dbpedia_21b");
-//            Doit("dbpedia_22b");
-//            Doit("dbpedia_21o");
             //yago
             Doit("yago_11b");
             Doit("yago_21o");
