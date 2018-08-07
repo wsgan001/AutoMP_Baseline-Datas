@@ -168,12 +168,12 @@ public class DataGen_Yago {
 
         for(Integer i=1; i<=MaxEntityNumber; ++i)
 		{
-			Integer ret = 3481453, dep = -1;
+			Integer ret = 4832388, dep = -1;
 			for(Integer p : ty[i])
 			{
 				Integer de = 0;
 				if(depth.containsKey(p))de = depth.get(p);
-				if(de > dep)
+				if(de > dep && de <= 3)
 				{
 					dep = de;
 					ret = p;
@@ -312,16 +312,20 @@ public class DataGen_Yago {
             TypeHash.put(tp, TypeCnt);
             TypeCnt ++;
         }
-        Paths.add((ArrayList<Integer>) pt.clone());
-        if(!Node2Path.containsKey(node))
+        if(SampleTypes.contains(tp))
         {
-            ArrayList<Integer> tmp = new ArrayList<Integer>(); tmp.clear();
-            Node2Path.put(node, tmp);
+            Paths.add((ArrayList<Integer>) pt.clone());
+            if (!Node2Path.containsKey(node))
+            {
+                ArrayList<Integer> tmp = new ArrayList<Integer>();
+                tmp.clear();
+                Node2Path.put(node, tmp);
+            }
+            ArrayList<Integer> now = (ArrayList<Integer>) Node2Path.get(node).clone();
+            Integer label = Paths.size() - 1;
+            now.add(label);
+            Node2Path.put(node, now);
         }
-        ArrayList<Integer> now = (ArrayList<Integer>) Node2Path.get(node).clone();
-        Integer label = Paths.size() - 1;
-        now.add(label);
-        Node2Path.put(node, now);
         if(SampleTypes.contains(tp) && !NegaSamples.contains(node)) NegaSamples.add( node );
 
         if(!graph.G.containsKey(node) || len >= RandPathLen)
@@ -453,9 +457,9 @@ public class DataGen_Yago {
                 Sta_Nodes += NodeCnt;
                 Sta_Paths += Paths.size();
                 Sta_Types += TypeCnt;
-                Sta_PathperEnt += (double)Paths.size() / (double)NodeCnt;
+                Sta_PathperEnt += (double)Paths.size() / (double)NegaSamples.size();
                 Sta_FW.write("Nodes : " + NodeCnt.toString() + "  Types : " + TypeCnt.toString() + "  Paths : "+ Paths.size() + "\r\n");
-                Sta_FW.write("Paths per Entity : " + decifm.format((double)Paths.size() / (double)NodeCnt));
+                Sta_FW.write("Paths per Entity : " + decifm.format((double)Paths.size() / (double)NegaSamples.size()));
 
                 //debug
                 //System.out.println("Sampls : " + "  " + Samples.size() + "\tPaths : " + Paths.size()+ "\t" + "NegaShufs : " + NegaShuf.size() + "\t" + mat.format(new Date()));
@@ -555,6 +559,10 @@ public class DataGen_Yago {
 
                 Sta_FW.write("  Train Paths per Entity : " + decifm.format((double)tmp_Paths_Train / (double)tmp_Nodes_Train) + "\r\n\r\n");
                 Sta_PathperEnt_Train += (double)tmp_Paths_Train / (double)tmp_Nodes_Train;
+
+                FileWriter HashFW = new FileWriter(foldn + "Hash2Node.txt");
+                for(Integer id = 0; id < NodeCnt; ++id) HashFW.write(id.toString() + "\t" + Nodes.get(id) + "\r\n");
+                HashFW.close();
 
                 CYfw.close();
             } catch (FileNotFoundException e) {

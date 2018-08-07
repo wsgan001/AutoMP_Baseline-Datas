@@ -521,7 +521,7 @@ public class DataGen_v2 {
                 //addition samples paths
                 for(Integer p : Samples)
                 {
-                    if(AlreadyOutput.contains(p))continue;
+                    if(AlreadyOutput.contains(p)) continue;
                     ArrayList<Integer> labels = Node2Path.get(p);
                     for(Integer id : labels)
                     {
