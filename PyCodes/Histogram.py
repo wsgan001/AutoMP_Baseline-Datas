@@ -16,9 +16,12 @@ def autolabel(rects, Num=1, rotation1=60, NN=1):
 
 # 直方图
 def draw_Histogram():
+
+    plt.subplot(2, 1, 1)
+
     Y1 = [0.6676, 1.2675, 1.1204, 1.0558, 1.1332, 0.5678]  # NDCG@10
     Y2 = [0.6768, 1.2370, 1.1499, 1.1747, 0.8976, 1.0067]  # NDCG@20
-    fig, ax = plt.subplots()
+    # fig, ax = plt.subplots()
     index = np.arange(6) + 1
     bar_width = 0.15
     opacity = 0.8
@@ -29,13 +32,35 @@ def draw_Histogram():
     # autolabel(rec1)
     # autolabel(rec2)
     plt.ylim(0, 1.3)
-    plt.yticks(fontsize=20)
-    plt.xticks(index + bar_width, ('Relsim', 'Relsim+', 'ESER', 'ProxEmbed', 'AutoMP-', 'AutoMP'))
-    plt.tick_params(axis='x', which='major', labelsize=36)
+    plt.yticks(fontsize=15)
+    # plt.xticks(index + bar_width, ('Relsim', 'Relsim+', 'ESER', 'ProxEmbed', 'AutoMP-', 'AutoMP'))
+    # plt.tick_params(axis='x', which='major', labelsize=36)
     # plt.xlabel('Methods')
-    plt.ylabel('NDCG', fontsize=30)
+    plt.ylabel('NDCG on Simple Queries', fontsize=22)
     plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
-           ncol=2, mode="expand", borderaxespad=0., fontsize=30)
+           ncol=2, mode="expand", borderaxespad=0., fontsize=20)
+
+    plt.subplot(2, 1, 2)
+
+    Y1 = [0.6676, 1.2675, 1.1204, 1.0558, 1.1332, 0.5678]  # NDCG@10
+    Y2 = [0.6768, 1.2370, 1.1499, 1.1747, 0.8976, 1.0067]  # NDCG@20
+    # fig, ax = plt.subplots()
+    index = np.arange(6) + 1
+    bar_width = 0.15
+    opacity = 0.8
+    rec1 = plt.bar(index, Y1, bar_width, alpha=opacity, facecolor='lightskyblue', edgecolor='white', label='NDCG@10')
+    rec2 = plt.bar(index + bar_width, Y2, bar_width, alpha=opacity, facecolor='yellowgreen', edgecolor='white',
+                   label='NDCG@20')
+
+    # autolabel(rec1)
+    # autolabel(rec2)
+    plt.ylim(0, 1.3)
+    plt.yticks(fontsize=15)
+    plt.xticks(index + bar_width, ('Relsim', 'Relsim+', 'ESER', 'ProxEmbed', 'AutoMP-', 'AutoMP'))
+    plt.tick_params(axis='x', which='major', labelsize=30)
+    # plt.xlabel('Methods')
+    plt.ylabel('NDCG on Complex Queries', fontsize=22)
+
     plt.show()
 
 draw_Histogram()
