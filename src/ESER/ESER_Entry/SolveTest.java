@@ -3,6 +3,7 @@ package ESER.ESER_Entry;
 import JDBCUtils.JdbcUtil;
 import Graph.graph;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,7 +19,6 @@ import java.util.Vector;
 import ESER.ESER_Algorithm.GetAnswer_SingleCenterNode;
 import ESER.ESER_Algorithm.GetAnswer_MultiCenterNode;
 import ESER.ESER_Algorithm.GetAnswer_EntityPathCount;
-import org.omg.SendingContext.RunTime;
 
 public class SolveTest {
 
@@ -52,42 +52,44 @@ public class SolveTest {
 		
 	}
 
-	public static void main(Integer testcase) {
-		// TODO Auto-generated method stub
+	public static void main(Integer SampleNumber, ArrayList<String> names, ArrayList<Integer> cases) {
 		ImportDataBase();
-		//TestGraph();
-		QueryNumber = testcase;
         try {
-            FileWriter timew = new FileWriter(new File("./datas/Test/RunTime.txt"));
-            for(Integer queryid = 1; queryid <= QueryNumber; ++ queryid)
+            for(Integer trainid = 0; trainid < names.size(); ++ trainid)
             {
-                System.out.print("Test " + queryid.toString());
-                timew.write("Test " + queryid.toString());
-                long startTime=System.currentTimeMillis();   //获取开始时间
-                Integer centernode = 0;
-                Vector<Integer> relativenode = new Vector<Integer>();
-                relativenode.clear();
-                String filename = "./datas/Test/" + queryid.toString() + ".in";
-                InputStream is = new FileInputStream(filename);
-                Scanner sc = new Scanner(is);
-                centernode = sc.nextInt();
-                while(sc.hasNextInt())relativenode.add(sc.nextInt());
-                sc.close();is.close();
-                GetAnswer_SingleCenterNode ga = new GetAnswer_SingleCenterNode();
-                //GetAnswer_MultiCenterNode ga = new GetAnswer_MultiCenterNode();
-                ga.clean();
-                Vector<Integer> answer = ga.findanswer(centernode, relativenode, g);
-                filename = "./datas/Test/" + queryid.toString() + ".out";
-                File opf = new File(filename);
-                FileWriter wr;
-                wr = new FileWriter(opf);
-                for(Integer p : answer)wr.write(p.toString() + "\r\n");
-                wr.close();
-                long endTime=System.currentTimeMillis(); //获取结束时间
-                System.out.println("  程序运行时间： "+(endTime-startTime)+"ms");
-                timew.write(" " + (endTime-startTime) + "\r\n");
+                Integer casenum = cases.get(trainid);
+                for(Integer caseid = 1; caseid <= casenum; ++ caseid)
+                {
+                    System.out.println("Case : " + names.get(trainid) + "\t" + caseid.toString());
+                    String foldnm = "./datas/ESER/" + names.get(trainid).toString() + "/" + caseid.toString() + "/";
+                    FileWriter timew = new FileWriter(new File(foldnm + "Time.txt"));
+                    for(Integer queryid = 1; queryid <= SampleNumber; ++queryid)
+                    {
+                        long startTime=System.currentTimeMillis();   //获取开始时间
+                        String InputName = foldnm + "Query_" + queryid.toString() + ".txt";
+                        Scanner sc = new Scanner(new FileInputStream(InputName));
+                        Integer centernode = sc.nextInt();
+                        Vector<Integer> relativenode = new Vector<Integer>(); relativenode.clear();
+                        while(sc.hasNextInt())
+                        {
+                            Integer p = sc.nextInt();
+                            relativenode.add(p);
+                        }
+                        sc.close();
+                        GetAnswer_SingleCenterNode ga = new GetAnswer_SingleCenterNode();
+                        //GetAnswer_MultiCenterNode ga = new GetAnswer_MultiCenterNode();
+                        ga.clean();
+                        Vector<Integer> answer = ga.findanswer(centernode, relativenode, g);
+                        FileWriter answ = new FileWriter(new File(foldnm + "Answer_" + queryid.toString() + ".txt"));
+                        for(Integer ans : answer) answ.write(ans.toString() + "\t");
+                        answ.close();
+                        long endTime=System.currentTimeMillis(); //获取结束时间
+                        System.out.println("Query : " + queryid.toString() + "程序运行时间： "+ (endTime-startTime) + "ms");
+                        timew.write("Answer_" + queryid.toString() + " : " + (endTime-startTime) + "\r\n");
+                    }
+                    timew.close();
+                }
             }
-            timew.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
