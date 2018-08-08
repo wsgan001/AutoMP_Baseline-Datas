@@ -180,11 +180,6 @@ public class DataGen_Yago {
 				}
 			}
 			NodeType.put(i, ret);
-			if(!typehash.containsKey(ret))
-            {
-                typehash.put(ret, typehashcnt);
-				typehashcnt ++;
-            }
 		}
 
 		CreateFolder("./datas/toys/toydata/");
