@@ -137,6 +137,7 @@ public class DataGen_DBpedia_and_v2 {
 	}
 
 	private static ArrayList<Integer>[] ty = new ArrayList[15000005];
+    private static Map<Integer, Integer> NodeDeg = new HashMap<Integer, Integer>();
 
 	private static void GetNodeInformation()
 	{
@@ -180,11 +181,13 @@ public class DataGen_DBpedia_and_v2 {
 				}
 			}
 			NodeType.put(i, ret);
-			if(!typehash.containsKey(ret))
+            Integer degcnt = 0;
+            if(graph.G.containsKey(i))
             {
-                typehash.put(ret, typehashcnt);
-				typehashcnt ++;
+                Map<Integer, List<Integer>> outnodes = graph.G.get(i);
+                for(Map.Entry<Integer, List<Integer>> kv : outnodes.entrySet()) degcnt += kv.getValue().size();
             }
+            NodeDeg.put(i, degcnt);
 		}
 
 		CreateFolder("./datas/toys/toydata/");
@@ -338,7 +341,7 @@ public class DataGen_DBpedia_and_v2 {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd))GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) && NodeDeg.get(nd) < 10000)GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
@@ -450,7 +453,16 @@ public class DataGen_DBpedia_and_v2 {
                 NodeFW.close();
 
                 for(Integer p : NegaSamples) if( p != cent && !Samples.contains(p) ) NegaShuf.add(p);
-                for(Integer p : Samples) if(!NodeHash.containsKey(p)) { Samples.remove(p); SamplesFlag = false; }
+                Iterator<Integer> ite = Samples.iterator();
+                while(ite.hasNext())
+                {
+                    Integer inte = ite.next();
+                    if(!NodeHash.containsKey(inte))
+                    {
+                        ite.remove();
+                        SamplesFlag = false;
+                    }
+                }
                 if(!SamplesFlag) System.out.println("Fuck!!!");
 
                 //Statistics
@@ -599,14 +611,14 @@ public class DataGen_DBpedia_and_v2 {
 		CreateFolder("./datas/toys/toydata/");
 
         try {
-            Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
-            //dbpedia
-            Doit("dbpedia_11b");
-            Doit("dbpedia_12b");
-            Doit("dbpedia_21b");
-            Doit("dbpedia_22b");
-            Doit("dbpedia_21o");
-            Sta_FW.close();
+//            Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
+//            //dbpedia
+//            Doit("dbpedia_11b");
+//            Doit("dbpedia_12b");
+//            Doit("dbpedia_21b");
+//            Doit("dbpedia_22b");
+//            Doit("dbpedia_21o");
+//            Sta_FW.close();
             Sta_FW = new FileWriter(new File("./datas/toys/toydata/v2_Statistic.txt"));
             //v2
             Doit("v2");

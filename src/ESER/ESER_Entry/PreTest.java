@@ -74,13 +74,20 @@ public class PreTest {
                     String outfile = "./datas/Test/" + testcase.toString() + ".sam";
                     fw = new FileWriter(new File(outfile));
                     fw.write(str + "\r\n");
-                    Centers.add(Integer.parseInt(str));
+                    Integer pos = str.indexOf(':');
+                    if(pos < 0) pos = str.length();
+                    Centers.add(Integer.parseInt(str.substring(0, pos)));
                     continue;
                 }
                 if(str.length() > 0)
                 {
                     tmp = str.split("\t");
-                    for(Integer i=0; i<tmp.length; ++i)fw.write(tmp[i] + " ");
+                    for(Integer i=0; i<tmp.length; ++i)
+                    {
+                        Integer pos = tmp[i].indexOf(':');
+                        if(pos < 0) pos = tmp[i].length();
+                        fw.write(tmp[i].substring(0, pos));
+                    }
                 }
                 fw.close();
             }
@@ -113,10 +120,20 @@ public class PreTest {
 				str = sc.nextLine();
 				tmp = str.split(" ");
 				Integer x = Math.min(SampleNumber, tmp.length);
-				for(Integer i=0; i<x; ++i)fw.write(tmp[i] + "   ");
+				for(Integer i=0; i<x; ++i)
+                {
+                    Integer pos = tmp[i].indexOf(':');
+                    if(pos < 0) pos = tmp[i].length();
+                    fw.write(tmp[i].substring(0, pos) + "   ");
+                }
 				fw.close();sc.close();is.close();
 				fw = new FileWriter("./datas/Test/" + test.toString() + ".ans");
-				for(Integer i=x; i<tmp.length; ++i)fw.write(tmp[i] + " ");
+				for(Integer i=x; i<tmp.length; ++i)
+                {
+                    Integer pos = tmp[i].indexOf(':');
+                    if(pos < 0) pos = tmp[i].length();
+                    fw.write(tmp[i].substring(0, pos) + "   ");
+                }
 				fw.close();
 			}
 		} catch (FileNotFoundException e) {

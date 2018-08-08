@@ -137,6 +137,7 @@ public class DataGen_Yago {
 	}
 
 	private static ArrayList<Integer>[] ty = new ArrayList[15000005];
+    private static Map<Integer, Integer> NodeDeg = new HashMap<Integer, Integer>();
 
 	private static void GetNodeInformation()
 	{
@@ -180,6 +181,13 @@ public class DataGen_Yago {
 				}
 			}
 			NodeType.put(i, ret);
+			Integer degcnt = 0;
+			if(graph.G.containsKey(i))
+            {
+                Map<Integer, List<Integer>> outnodes = graph.G.get(i);
+                for(Map.Entry<Integer, List<Integer>> kv : outnodes.entrySet()) degcnt += kv.getValue().size();
+            }
+            NodeDeg.put(i, degcnt);
 		}
 
 		CreateFolder("./datas/toys/toydata/");
@@ -332,7 +340,7 @@ public class DataGen_Yago {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd))GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) && NodeDeg.get(nd) <= 10000)GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
@@ -444,7 +452,16 @@ public class DataGen_Yago {
                 NodeFW.close();
 
                 for(Integer p : NegaSamples) if( p != cent && !Samples.contains(p) ) NegaShuf.add(p);
-                for(Integer p : Samples) if(!NodeHash.containsKey(p)) { Samples.remove(p); SamplesFlag = false; }
+                Iterator<Integer> ite = Samples.iterator();
+                while(ite.hasNext())
+                {
+                    Integer inte = ite.next();
+                    if(!NodeHash.containsKey(inte))
+                    {
+                        ite.remove();
+                        SamplesFlag = false;
+                    }
+                }
                 if(!SamplesFlag) System.out.println("Fuck!!!");
 
                 //Statistics
