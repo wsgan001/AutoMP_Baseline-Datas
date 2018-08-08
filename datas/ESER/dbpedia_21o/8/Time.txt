@@ -1,0 +1,5 @@
+Answer_1 : 34
+Answer_2 : 35
+Answer_3 : 14
+Answer_4 : 6
+Answer_5 : 2
