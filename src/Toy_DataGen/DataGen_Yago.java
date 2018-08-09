@@ -340,7 +340,7 @@ public class DataGen_Yago {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd) && NodeDeg.get(nd) <= 10000)GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) && NodeDeg.get(nd) <= 200000)GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
@@ -462,7 +462,7 @@ public class DataGen_Yago {
                         SamplesFlag = false;
                     }
                 }
-                if(!SamplesFlag) System.out.println("Fuck!!!");
+                if(!SamplesFlag) System.out.println("Fuck!!!   " + Samples.size());
 
                 //Statistics
                 Sta_Nodes += NodeCnt;
@@ -612,9 +612,10 @@ public class DataGen_Yago {
         try {
             Sta_FW = new FileWriter(new File("./datas/toys/toydata/Yago_Statistic.txt"));
             //yago
-            Doit("yago_11b");
-            Doit("yago_21o");
-            Doit("yago_22b");
+            //Doit("yago_11b");
+            //Doit("yago_21o");
+            //Doit("yago_22b");
+            Doit("yago_21b");
             Sta_FW.close();
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,5 +1,5 @@
-Answer_1 : 5380
-Answer_2 : 5795
-Answer_3 : 24
-Answer_4 : 23
-Answer_5 : 23
+Answer_1 : 4631
+Answer_2 : 4457
+Answer_3 : 18
+Answer_4 : 20
+Answer_5 : 20

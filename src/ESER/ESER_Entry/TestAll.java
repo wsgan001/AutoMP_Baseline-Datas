@@ -41,6 +41,7 @@ public class TestAll {
 		names.add("yago_11b");
 		names.add("yago_22b");
 		names.add("yago_21o");
+		names.add("yago_21b");
 		names.add("v2");
 		PreTest pre = new PreTest();
 		SolveTest sol = new SolveTest();

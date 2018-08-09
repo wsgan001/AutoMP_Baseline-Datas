@@ -1,5 +1,5 @@
-Answer_1 : 65
-Answer_2 : 54
-Answer_3 : 7
-Answer_4 : 8
-Answer_5 : 8
+Answer_1 : 52
+Answer_2 : 46
+Answer_3 : 6
+Answer_4 : 6
+Answer_5 : 6

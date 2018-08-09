@@ -1,5 +1,5 @@
-Answer_1 : 2342
-Answer_2 : 1818
-Answer_3 : 19
-Answer_4 : 18
-Answer_5 : 18
+Answer_1 : 1630
+Answer_2 : 1602
+Answer_3 : 18
+Answer_4 : 16
+Answer_5 : 16

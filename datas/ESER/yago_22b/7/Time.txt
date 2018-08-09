@@ -1,5 +1,5 @@
-Answer_1 : 2
+Answer_1 : 1
 Answer_2 : 1
 Answer_3 : 0
-Answer_4 : 1
+Answer_4 : 0
 Answer_5 : 1
