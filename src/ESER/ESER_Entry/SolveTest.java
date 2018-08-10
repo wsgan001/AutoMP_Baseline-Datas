@@ -58,11 +58,12 @@ public class SolveTest {
             for(Integer trainid = 0; trainid < names.size(); ++ trainid)
             {
                 Integer casenum = cases.get(trainid);
+                FileWriter timew = new FileWriter(new File("./datas/ESER/" + names.get(trainid).toString() + "/Time.txt"));
+                FileWriter answ = new FileWriter(new File("./datas/ESER/" + names.get(trainid).toString() + "/Answer.txt"));
                 for(Integer caseid = 1; caseid <= casenum; ++ caseid)
                 {
                     System.out.println("Case : " + names.get(trainid) + "\t" + caseid.toString());
                     String foldnm = "./datas/ESER/" + names.get(trainid).toString() + "/" + caseid.toString() + "/";
-                    FileWriter timew = new FileWriter(new File(foldnm + "Time.txt"));
                     for(Integer queryid = 1; queryid <= SampleNumber; ++queryid)
                     {
                         long startTime=System.currentTimeMillis();   //获取开始时间
@@ -80,15 +81,14 @@ public class SolveTest {
                         //GetAnswer_MultiCenterNode ga = new GetAnswer_MultiCenterNode();
                         ga.clean();
                         Vector<Integer> answer = ga.findanswer(centernode, relativenode, g);
-                        FileWriter answ = new FileWriter(new File(foldnm + "Answer_" + queryid.toString() + ".txt"));
                         for(Integer ans : answer) answ.write(ans.toString() + "\t");
-                        answ.close();
+                        answ.write("\r\n");
                         long endTime=System.currentTimeMillis(); //获取结束时间
-                        System.out.println("Query : " + queryid.toString() + "程序运行时间： "+ (endTime-startTime) + "ms");
-                        timew.write("Answer_" + queryid.toString() + " : " + (endTime-startTime) + "\r\n");
+                        System.out.println("Query : " + queryid.toString() + "  程序运行时间： "+ (endTime-startTime) + "ms");
+                        timew.write((endTime-startTime) + "\r\n");
                     }
-                    timew.close();
                 }
+                answ.close(); timew.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
