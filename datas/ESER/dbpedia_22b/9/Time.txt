@@ -1,5 +1,0 @@
-Answer_1 : 8
-Answer_2 : 8
-Answer_3 : 5
-Answer_4 : 6
-Answer_5 : 5

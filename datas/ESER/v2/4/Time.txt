@@ -1,5 +1,0 @@
-Answer_1 : 31589
-Answer_2 : 31414
-Answer_3 : 56
-Answer_4 : 53
-Answer_5 : 54

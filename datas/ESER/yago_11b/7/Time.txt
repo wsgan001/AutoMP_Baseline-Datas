@@ -1,5 +1,0 @@
-Answer_1 : 202
-Answer_2 : 204
-Answer_3 : 11
-Answer_4 : 9
-Answer_5 : 11

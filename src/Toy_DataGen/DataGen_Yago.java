@@ -340,7 +340,7 @@ public class DataGen_Yago {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd) && NodeDeg.get(nd) <= 200000)GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) && NodeDeg.get(nd) < 10000)GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);

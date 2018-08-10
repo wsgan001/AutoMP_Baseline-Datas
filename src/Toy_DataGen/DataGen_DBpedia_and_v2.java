@@ -341,7 +341,7 @@ public class DataGen_DBpedia_and_v2 {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd) && NodeDeg.get(nd) < 10000)GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) )GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
@@ -613,11 +613,11 @@ public class DataGen_DBpedia_and_v2 {
         try {
             Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
             //dbpedia
-            Doit("dbpedia_11b");
-            Doit("dbpedia_12b");
-            Doit("dbpedia_21b");
+            //Doit("dbpedia_11b");
+            //Doit("dbpedia_12b");
+            //Doit("dbpedia_21b");
             Doit("dbpedia_22b");
-            Doit("dbpedia_21o");
+            //Doit("dbpedia_21o");
             Sta_FW.close();
 //            Sta_FW = new FileWriter(new File("./datas/toys/toydata/v2_Statistic.txt"));
 //            //v2
