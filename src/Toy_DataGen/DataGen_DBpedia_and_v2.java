@@ -611,18 +611,18 @@ public class DataGen_DBpedia_and_v2 {
 		CreateFolder("./datas/toys/toydata/");
 
         try {
-            Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
+            ////Sta_FW = new FileWriter(new File("./datas/toys/toydata/DBpedia_Statistic.txt"));
             //dbpedia
             //Doit("dbpedia_11b");
             //Doit("dbpedia_12b");
             //Doit("dbpedia_21b");
-            Doit("dbpedia_22b");
+            //Doit("dbpedia_22b");
             //Doit("dbpedia_21o");
+            //Sta_FW.close();
+            Sta_FW = new FileWriter(new File("./datas/toys/toydata/v2_Statistic.txt"));
+            //v2
+            Doit("v2");
             Sta_FW.close();
-//            Sta_FW = new FileWriter(new File("./datas/toys/toydata/v2_Statistic.txt"));
-//            //v2
-//            Doit("v2");
-//            Sta_FW.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

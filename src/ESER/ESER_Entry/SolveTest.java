@@ -3,8 +3,7 @@ package ESER.ESER_Entry;
 import JDBCUtils.JdbcUtil;
 import Graph.graph;
 
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,8 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.util.Scanner;
-import java.util.Vector;
+import java.util.Date;
 
 import ESER.ESER_Algorithm.GetAnswer_SingleCenterNode;
 import ESER.ESER_Algorithm.GetAnswer_MultiCenterNode;
@@ -54,14 +52,16 @@ public class SolveTest {
 
 	public static void main(Integer SampleNumber, ArrayList<String> names, ArrayList<Integer> cases) {
 		ImportDataBase();
-        try {
+        Set<Integer> forbidid = new HashSet<Integer>(); forbidid.clear();
+		try {
             for(Integer trainid = 0; trainid < names.size(); ++ trainid)
             {
                 Integer casenum = cases.get(trainid);
                 FileWriter timew = new FileWriter(new File("./datas/ESER/" + names.get(trainid).toString() + "/Time.txt"));
                 FileWriter answ = new FileWriter(new File("./datas/ESER/" + names.get(trainid).toString() + "/Answer.txt"));
-                for(Integer caseid = 1; caseid <= casenum; ++ caseid)
+                for(Integer caseid = 1 ; caseid <= casenum; ++ caseid)
                 {
+                    if(forbidid.contains(caseid))  continue;
                     System.out.println("Case : " + names.get(trainid) + "\t" + caseid.toString());
                     String foldnm = "./datas/ESER/" + names.get(trainid).toString() + "/" + caseid.toString() + "/";
                     for(Integer queryid = 1; queryid <= SampleNumber; ++queryid)
