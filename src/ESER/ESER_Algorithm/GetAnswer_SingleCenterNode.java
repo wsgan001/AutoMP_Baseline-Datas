@@ -5,12 +5,13 @@ import JDBCUtils.JdbcUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigInteger;
 import java.util.*;
 
 public class GetAnswer_SingleCenterNode {
-	
+
 	//h + k + Vector<EdgeNum> + Set<Nodes>
-	
+
 	public static class SatiPath
 	{
 		public Integer valH;
@@ -18,13 +19,14 @@ public class GetAnswer_SingleCenterNode {
 		public Set<Integer> satiNodes;
 		public Set<Integer> sampleNodes;
 	}
-	
+
 	public static Integer LimH = 0;
 	public static Integer TopK = 0;
 	public static Integer LimS = 0;
 	public static Integer CenterNode = 0;
 	public static Integer Smooth = 0;
 	public static Integer RelaxNumber = 0;
+	public static Integer PathCnt = 0;
 	public static Set<Integer> SampleNodes = new HashSet<Integer>();
 	public static Set<Integer> CandidateNodes = new HashSet<Integer>();
 	public static Vector<SatiPath> tmpSP = new Vector<SatiPath>();
@@ -34,32 +36,33 @@ public class GetAnswer_SingleCenterNode {
 	public static Set<Integer> AlreadyChoose = new HashSet<Integer>();
 	public static Vector<Integer> ResultNode = new Vector<Integer>();
 	public static Vector<Double> ResultScore = new Vector<Double>();
+	public static Map<String, Integer> path = new HashMap<String, Integer>();
 	public static graph g;
-	
-	static {
-        try {
-            // 加载dbinfo.properties配置文件
-        	InputStream in = JdbcUtil.class.getClassLoader()
-                    .getResourceAsStream("ESER.properties");
-            Properties properties = new Properties();
-            properties.load(in);
-            
-            //多中心问题，从example发散的步数
-            LimS = Integer.parseInt(properties.getProperty("LimitSearchSteps"));
-            //SF的长度限制
-            LimH = Integer.parseInt(properties.getProperty("LimitPhiSteps"));
-            //返回多少个结果
-            TopK = Integer.parseInt(properties.getProperty("TopK"));
-            //是否采用平滑
-			Smooth = Integer.parseInt(properties.getProperty("SmoothOrNot"));
-            //找SF,选择中心时最多漏覆盖的Sample数
-            RelaxNumber = Integer.parseInt(properties.getProperty("RelaxNumber"));
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-	
+	static {
+		try {
+			// 加载dbinfo.properties配置文件
+			InputStream in = JdbcUtil.class.getClassLoader()
+					.getResourceAsStream("ESER.properties");
+			Properties properties = new Properties();
+			properties.load(in);
+
+			//多中心问题，从example发散的步数
+			LimS = Integer.parseInt(properties.getProperty("LimitSearchSteps"));
+			//SF的长度限制
+			LimH = Integer.parseInt(properties.getProperty("LimitPhiSteps"));
+			//返回多少个结果
+			TopK = Integer.parseInt(properties.getProperty("TopK"));
+			//是否采用平滑
+			Smooth = Integer.parseInt(properties.getProperty("SmoothOrNot"));
+			//找SF,选择中心时最多漏覆盖的Sample数
+			RelaxNumber = Integer.parseInt(properties.getProperty("RelaxNumber"));
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static void clean()
 	{
 		walked.clear();
@@ -70,9 +73,9 @@ public class GetAnswer_SingleCenterNode {
 		SampleNodes.clear();
 		CandidateNodes.clear();
 		SP.clear();tmpSP.clear();oneStep.clear();
+		path.clear(); PathCnt = 0;
 	}
-	
-	/*
+
 	private static Integer hash2Num(String hashnum)
 	{
 		Integer ret = 0;
@@ -84,21 +87,19 @@ public class GetAnswer_SingleCenterNode {
 		}
 		return ret;
 	}
-	*/
-	
+
 	private static void addInfo(Integer centernode, Vector<Integer> samplenodes)
 	{
 		CenterNode = centernode;
 		SampleNodes.clear();
 		for(Integer p : samplenodes)SampleNodes.add(p);
 	}
-	
-	/*
+
 	private static String vectorIntegerHash(Vector<Integer> v)
 	{
 		BigInteger sum = BigInteger.valueOf(0);
 		BigInteger add = BigInteger.valueOf(1);
-		BigInteger mul = BigInteger.valueOf(1000000);
+		BigInteger mul = BigInteger.valueOf(10000000);
 		mul = mul.multiply(mul);
 		for(Integer p : v)
 		{
@@ -109,8 +110,7 @@ public class GetAnswer_SingleCenterNode {
 		}
 		return sum.toString();
 	}
-	*/
-	
+
 	private static void DFS(Integer node, Integer len, Vector<Integer> walkedges)
 	{
 		if(!g.G.containsKey(node))return;
@@ -122,17 +122,21 @@ public class GetAnswer_SingleCenterNode {
 			Integer edgenum = ent.getKey();
 			List<Integer> outnodes = ent.getValue();
 			tmpwalkedges.add(edgenum);
+			String vih = vectorIntegerHash(tmpwalkedges);
+			Integer label = hash2Num(vih);
 			SatiPath sp = new SatiPath();
-			sp.pathEdges = new Vector<Integer>();
+			sp.pathEdges = (Vector<Integer>) tmpwalkedges.clone();
 			sp.satiNodes = new HashSet<Integer>();
 			sp.sampleNodes = new HashSet<Integer>();
-			sp.valH = len; sp.pathEdges = (Vector<Integer>) tmpwalkedges.clone();
+			sp.valH = len;
+			if(label >= tmpSP.size()) tmpSP.add(sp);
+			SatiPath tsp = tmpSP.get(label);
 			for(Integer tonode : outnodes)
 			{
-				if(SampleNodes.contains(tonode)) sp.sampleNodes.add(tonode);
-				sp.satiNodes.add(tonode);
+				if(SampleNodes.contains(tonode)) tsp.sampleNodes.add(tonode);
+				tsp.satiNodes.add(tonode);
 			}
-			tmpSP.add(sp);
+			tmpSP.set(label, tsp);
 			for(Integer tonode : outnodes)
 				if(!walked.contains(tonode) && len<LimH)
 				{
@@ -142,7 +146,7 @@ public class GetAnswer_SingleCenterNode {
 				}
 		}
 	}
-	
+
 	private static void find()
 	{
 		walked.add(CenterNode);
@@ -150,7 +154,7 @@ public class GetAnswer_SingleCenterNode {
 		pt.clear();
 		DFS(CenterNode, 0, pt);
 	}
-	
+
 	private static void getSatisfiedPath()
 	{
 		Integer cnt = SampleNodes.size();
@@ -166,14 +170,14 @@ public class GetAnswer_SingleCenterNode {
 			if(sp.valH == 1)oneStep.add(sp);
 		}
 	}
-	
+
 	private static Integer setCap(Set<Integer> s1, Set<Integer> s2)
 	{
 		Integer cnt = 0;
 		for(Integer p : s1)if(s2.contains(p))cnt ++;
 		return cnt;
 	}
-	
+
 	private static void calculateScore()
 	{
 		//System.out.println(CandidateNodes.size());
@@ -199,7 +203,7 @@ public class GetAnswer_SingleCenterNode {
 					if(spp.sampleNodes.contains(samplenodes))s1 += tmp;
 					s2 += tmp;
 				}
-				if(sp.valH > 1) {s1 += 1.0; s2 += 1.0;}
+				//if(sp.valH > 1) {s1 += 1.0; s2 += 1.0;}
 				r *= (s1 / s2);
 				//if(s1 > 0)r *= (s1 / s2);
 			}
@@ -232,7 +236,7 @@ public class GetAnswer_SingleCenterNode {
 		}
 		*/
 	}
-	
+
 	public static Vector<Integer> findanswer(Integer centernode, Vector<Integer> relativenode, graph gg)
 	{
 		Vector<Integer> ret = new Vector<Integer>();

@@ -1,6 +1,7 @@
 package ESER.ESER_Entry;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -10,9 +11,9 @@ public class CheckAnswer {
 	private static Set<Integer> ret = new HashSet<Integer>();
 	private static String[] names = new String[1005];
 
-	public static void main(Integer testcase) {
+	public static void main(Integer SampleNumber, ArrayList<String> names, ArrayList<Integer> cases) {
 		// TODO Auto-generated method stub
-			for(Integer i = 0; i <= 1000; i ++) names[i] = "";
+			/*for(Integer i = 0; i <= 1000; i ++) names[i] = "";
 			InputStream is;
 			Scanner sc;
 			try {
@@ -64,7 +65,7 @@ public class CheckAnswer {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 	}
 
 }

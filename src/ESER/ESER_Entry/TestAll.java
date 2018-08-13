@@ -9,6 +9,7 @@ import ESER.ESER_Entry.CheckAnswer;
 import ESER.ESER_Entry.PreTest;
 import ESER.ESER_Entry.SolveTest;
 import JDBCUtils.JdbcUtil;
+import nDCG.CalNDCG;
 
 public class TestAll {
 
@@ -33,21 +34,24 @@ public class TestAll {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<String> names = new ArrayList<String>(); names.clear();
-//		names.add("dbpedia_11b");
-//		names.add("dbpedia_12b");
-//		names.add("dbpedia_21b");
-//		names.add("dbpedia_22b");
-//		names.add("dbpedia_21o");
+		names.add("dbpedia_11b");
+		names.add("dbpedia_21b");
+		names.add("dbpedia_22b");
+		names.add("dbpedia_21o");
 //		names.add("yago_11b");
 //		names.add("yago_22b");
 //		names.add("yago_21o");
 //		names.add("yago_21b");
-		names.add("v2");
 		PreTest pre = new PreTest();
 		SolveTest sol = new SolveTest();
 		//CheckAnswer che = new CheckAnswer();
 		ArrayList<Integer> cases = pre.main(QueryNumberLimit, names);
 		sol.main(QueryNumberLimit, names, cases);
+		for(String nm : names)
+        {
+            System.out.println(nm.toString());
+            CalNDCG.process("./datas/ESER/" + nm.toString() + "/Answer.txt", "./datas/ESER/OriginData/" + nm.toString() + ".txt");
+        }
 		//che.main(QueryNumberLimit, names, cases);
 	}
 

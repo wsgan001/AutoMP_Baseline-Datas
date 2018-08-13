@@ -341,7 +341,7 @@ public class DataGen_DBpedia_and_v2 {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd) )GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) && NodeDeg.get(nd) < 50000)GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
