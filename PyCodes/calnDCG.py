@@ -26,5 +26,6 @@ def solve(filenm):
         print(str(a1) + ';' + str(a2), file=wr)
     wr.close()
 
-solve('dbpedia')
+solve('dbpedia2')
+solve('dbpedia3')
 solve('yago')

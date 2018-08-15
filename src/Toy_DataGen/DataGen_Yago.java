@@ -340,7 +340,7 @@ public class DataGen_Yago {
         {
             List<Integer> otnd = kv.getValue();
             for(Integer nd : otnd)
-                if(!HasWalked.contains(nd) && NodeDeg.get(nd) < 10000)GetSubGraph(nd, len + 1, pt);
+                if(!HasWalked.contains(nd) )GetSubGraph(nd, len + 1, pt);
         }
 
         HasWalked.remove(node);
@@ -613,9 +613,9 @@ public class DataGen_Yago {
             Sta_FW = new FileWriter(new File("./datas/toys/toydata/Yago_Statistic.txt"));
             //yago
             //Doit("yago_11b");
-            //Doit("yago_21o");
+            Doit("yago_21o");
             //Doit("yago_22b");
-            Doit("yago_21b");
+            //Doit("yago_21b");
             Sta_FW.close();
         } catch (IOException e) {
             e.printStackTrace();

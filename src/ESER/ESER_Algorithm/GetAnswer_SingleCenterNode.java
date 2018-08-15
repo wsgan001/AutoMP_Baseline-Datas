@@ -16,8 +16,8 @@ public class GetAnswer_SingleCenterNode {
 	{
 		public Integer valH;
 		public Vector<Integer> pathEdges;
-		public Set<Integer> satiNodes;
-		public Set<Integer> sampleNodes;
+		public HashSet<Integer> satiNodes;
+		public HashSet<Integer> sampleNodes;
 	}
 
 	public static Integer LimH = 0;
@@ -82,8 +82,9 @@ public class GetAnswer_SingleCenterNode {
 		if(path.containsKey(hashnum)) ret = path.get(hashnum);
 		else
 		{
-			ret = PathCnt ++;
+			ret = PathCnt;
 			path.put(hashnum, PathCnt);
+			PathCnt ++;
 		}
 		return ret;
 	}
@@ -113,8 +114,8 @@ public class GetAnswer_SingleCenterNode {
 
 	private static void DFS(Integer node, Integer len, Vector<Integer> walkedges)
 	{
-		if(!g.G.containsKey(node))return;
-		len ++;
+		if(!g.G.containsKey(node) || len == LimH)return;
+		//len ++;
 		HashMap<Integer, List<Integer>> outedges = g.G.get(node);
 		for(Map.Entry<Integer, List<Integer>> ent : outedges.entrySet())
 		{
@@ -128,20 +129,24 @@ public class GetAnswer_SingleCenterNode {
 			sp.pathEdges = (Vector<Integer>) tmpwalkedges.clone();
 			sp.satiNodes = new HashSet<Integer>();
 			sp.sampleNodes = new HashSet<Integer>();
-			sp.valH = len;
-			if(label >= tmpSP.size()) tmpSP.add(sp);
-			SatiPath tsp = tmpSP.get(label);
-			for(Integer tonode : outnodes)
+			sp.valH = len + 1;
+			if(label < tmpSP.size())
+            {
+                sp.satiNodes = (HashSet<Integer>) tmpSP.get(label).satiNodes;
+                sp.sampleNodes = (HashSet<Integer>) tmpSP.get(label).sampleNodes;
+            }
+            for(Integer tonode : outnodes)
 			{
-				if(SampleNodes.contains(tonode)) tsp.sampleNodes.add(tonode);
-				tsp.satiNodes.add(tonode);
+				if(SampleNodes.contains(tonode)) sp.sampleNodes.add(tonode);
+				sp.satiNodes.add(tonode);
 			}
-			tmpSP.set(label, tsp);
+			if(label < tmpSP.size())tmpSP.set(label, sp);else tmpSP.add(sp);
+            //if(len==0)System.out.println("Center : " + node.toString() + " Outedge : " + edgenum.toString());
 			for(Integer tonode : outnodes)
-				if(!walked.contains(tonode) && len<LimH)
+				if(!walked.contains(tonode))
 				{
 					walked.add(tonode);
-					DFS(tonode, len, tmpwalkedges);
+					DFS(tonode, len + 1, tmpwalkedges);
 					walked.remove(tonode);
 				}
 		}
@@ -159,11 +164,26 @@ public class GetAnswer_SingleCenterNode {
 	{
 		Integer cnt = SampleNodes.size();
 		SP.clear();
+		//Test
+        Vector<Integer> fuck = new Vector<Integer>(); fuck.clear();
+        fuck.add(4295855); fuck.add(104295855); fuck.add(4295839);
+        String fuckString = vectorIntegerHash(fuck);
 		for(SatiPath sp : tmpSP)
 		{
-			if(sp.valH == 1 || sp.sampleNodes.size() >= cnt - RelaxNumber)
+		    /*if(vectorIntegerHash(sp.pathEdges).equals(fuckString))
+            {
+                System.out.print("Cnt : " + cnt.toString() + " Sample Number : " + sp.sampleNodes.size());
+                for(Integer p : sp.sampleNodes) System.out.print(" " + p.toString());
+                System.out.println();
+                System.out.println("Sati Number : " + sp.satiNodes.size());
+            }*/
+			if((sp.valH == 1 && sp.sampleNodes.size() > 0) || sp.sampleNodes.size() >= cnt - RelaxNumber)
 			{
 				SP.add(sp);
+				if(SampleNodes.size() > 10) {
+                    for (Integer p : sp.pathEdges) System.out.print(p + " ");
+                    System.out.println();
+                }
 				for(Integer p : sp.satiNodes)
 					if(!SampleNodes.contains(p))CandidateNodes.add(p);
 			}
