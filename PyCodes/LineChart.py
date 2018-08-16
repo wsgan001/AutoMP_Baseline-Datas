@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 plt.rc('font', family='Times New Roman')  # 设置字体字号
 
-fontsz = 35
+fontsz = 43
 
 def autolabel(rects, Num=1, rotation1=60, NN=1):
     for rect in rects:
@@ -17,7 +17,7 @@ def autolabel(rects, Num=1, rotation1=60, NN=1):
 # 折线图
 def draw_line_chart():
 
-    plt.figure(figsize=(26,10.5))
+    plt.figure(figsize=(32.5,11))
 
     plt.subplot(1, 2, 1)
 
@@ -31,26 +31,26 @@ def draw_line_chart():
     y6 = [0.8936379211801049, 0.5407785970730171, 0.7825839661602851, 0.471204999561076]  # D2AGE2
 
     # plt.plot(x, y1, 'gd-', alpha=0.8, color='lightskyblue', linewidth=2, label='ESER')  # 在当前绘图对象绘图（X轴，Y轴，蓝色虚线，线宽度）
-    # plt.plot(x, y2, 'g*-', alpha=0.8, color='yellowgreen', linewidth=2, label='Relsim')
+    # plt.plot(x, y2, 'g*-', alpha=0.8, color='darkgreengreen', linewidth=2, label='Relsim')
     # plt.plot(x, y3, 'gs-', alpha=0.8, color='grey', linewidth=2, label='Exaustive')
     # plt.plot(x, y4, 'g^-', alpha=0.8, color='red', linewidth=2, label='Greedy')
     # plt.plot(x, y5, 'gx-', alpha=0.8, color='purple', linewidth=2, label='ProxEmbed2')
     # plt.plot(x, y6, 'go-', alpha=0.8, color='black', linewidth=2, label='D2AGE2')
 
-    plt.plot(x, y1, 'gd-', alpha=0.8, linewidth=2, label='ESER', color='black', ms=10)
-    plt.plot(x, y2, 'g*-', alpha=0.8, linewidth=2, label='Relsim', color='black', ms=10)
-    plt.plot(x, y3, 'gs-', alpha=0.8, linewidth=2, label='Exaustive', color='black', ms=10)
-    plt.plot(x, y4, 'g^-', alpha=0.8, linewidth=2, label='Greedy', color='black', ms=10)
-    plt.plot(x, y5, 'gx-', alpha=0.8, linewidth=2, label='ProxEmbed2', color='black', ms=10)
-    plt.plot(x, y6, 'go-', alpha=0.8, linewidth=2, label='D2AGE2', color='black', ms=10)
+    plt.plot(x, y2, 'gd-', alpha=0.8, linewidth=2, label='RelSim', color='blue', ms=25)
+    plt.plot(x, y5, 'g*-', alpha=0.8, linewidth=2, label='ProxEmbed', color='red', ms=25)
+    plt.plot(x, y6, 'gs-', alpha=0.8, linewidth=2, label='D2AGE', color='pink', ms=25)
+    plt.plot(x, y1, 'g^-', alpha=0.8, linewidth=2, label='ESER', color='darkgreen', ms=25)
+    plt.plot(x, y4, 'gx-', alpha=0.8, linewidth=2, label='RelSUE', color='purple', ms=25)
+    plt.plot(x, y3, 'go-', alpha=0.8, linewidth=2, label='RelSUE-E', color='black', ms=25)
 
     plt.xlim(1, 4)
     # plt.ylim(0.6,0.9)
     plt.ylim(0, 1)
     plt.yticks(fontsize=fontsz)
-    plt.xticks([1, 2, 3, 4], [r'11b', r'21b', r'21o', r'22b'], fontsize=fontsz)
-    # plt.ylabel("NDCG@10 on DBpedia", fontsize=fontsz)
-    # plt.xlabel("DBpedia DataSets", fontsize=fontsz)
+    plt.xticks([1, 2, 3, 4], [r'$Q_{D1}$', r'$Q_{D2}$', r'$Q_{D3}$', r'$Q_{D4}$'], fontsize=fontsz)
+    plt.ylabel("NDCG@10", fontsize=fontsz)
+    # plt.xlabel("DBpedia", fontsize=fontsz)
     plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
     #plt.legend(fontsize=25, ncol=6, loc=(0.12, 1.04))
     plt.legend(ncol=6, loc=(0.01,1.03), fontsize=fontsz)
@@ -60,29 +60,29 @@ def draw_line_chart():
     # X轴，Y轴数据
     x = [1, 2, 3, 4]
     y1 = [0.6282599426326987, 0.06514158083418359, 0.5222178826221934, 0.9861137556126445]  # ESER
-    y2 = [0.5864973849349379, 0.054467574074231626, 0.4380314270875787, 0.1784783709018772]  # Relsim
+    y2 = [0.5864973849349379, 0.054467574074231626, 0.6064659491366067, 0.1784783709018772]  # Relsim
     y3 = [0.9718342412090308, 0.0, 0.8193871392755444, 0.8354982219885247]  # Exaustive
     y4 = [0.9427707232422382, 0.9575073986183329, 0.7571344764627659, 0.7497816654045188]  # Greedy
     y5 = [0.5, 0.5, 0.5, 0.5]  # ProxEmbed2
     y6 = [0.5, 0.5, 0.5, 0.5]  # D2AGE2
 
-    plt.plot(x, y1, 'gd-', alpha=0.8, linewidth=2, label='ESER', color='black', ms=10)
-    plt.plot(x, y2, 'g*-', alpha=0.8, linewidth=2, label='Relsim', color='black', ms=10)
-    plt.plot(x, y3, 'gs-', alpha=0.8, linewidth=2, label='Exaustive', color='black', ms=10)
-    plt.plot(x, y4, 'g^-', alpha=0.8, linewidth=2, label='Greedy', color='black', ms=10)
-    plt.plot(x, y5, 'gx-', alpha=0.8, linewidth=2, label='ProxEmbed2', color='black', ms=10)
-    plt.plot(x, y6, 'go-', alpha=0.8, linewidth=2, label='D2AGE2', color='black', ms=10)
+    plt.plot(x, y2, 'gd-', alpha=0.8, linewidth=2, label='RelSim', color='blue', ms=25)
+    plt.plot(x, y5, 'g*-', alpha=0.8, linewidth=2, label='ProxEmbed', color='red', ms=25)
+    plt.plot(x, y6, 'gs-', alpha=0.8, linewidth=2, label='D2AGE', color='pink', ms=25)
+    plt.plot(x, y1, 'g^-', alpha=0.8, linewidth=2, label='ESER', color='darkgreen', ms=25)
+    plt.plot(x, y4, 'gx-', alpha=0.8, linewidth=2, label='RelSUE', color='purple', ms=25)
+    plt.plot(x, y3, 'go-', alpha=0.8, linewidth=2, label='RelSUE-E', color='black', ms=25)
 
     plt.xlim(1, 4)
     # plt.ylim(0.6,0.9)
     plt.ylim(0, 1)
     plt.yticks(fontsize=fontsz)
-    # plt.xlabel("YAGO DataSets", fontsize=30)
-    plt.xticks([1, 2, 3, 4], [r'11b', r'21b', r'21o', r'22b'], fontsize=fontsz)
+    # plt.xlabel("YAGO", fontsize=fontsz)
+    plt.xticks([1, 2, 3, 4], [r'$Q_{Y1}$', r'$Q_{Y2}$', r'$Q_{Y3}$', r'$Q_{Y4}$'], fontsize=fontsz)
     # plt.ylabel("NDCG@10 on YAGO", fontsize=fontsz)
     plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
-    plt.subplots_adjust(left=0.03,right=0.98,wspace=0.15,hspace=0.15,bottom=0.08,top=0.88)
+    plt.subplots_adjust(left=0.05,right=0.98,wspace=0.15,hspace=0.15,bottom=0.11,top=0.88)
     # plt.show()  # 显示图
     plt.savefig('C:\\Users\\lzy96\\Desktop\\linechart.pdf')
 

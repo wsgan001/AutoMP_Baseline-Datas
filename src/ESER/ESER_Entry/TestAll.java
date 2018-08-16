@@ -34,14 +34,14 @@ public class TestAll {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<String> names = new ArrayList<String>(); names.clear();
-		names.add("dbpedia_11b");
-		names.add("dbpedia_21b");
-		names.add("dbpedia_22b");
-		names.add("dbpedia_21o");
-		//names.add("yago_11b");
-		//names.add("yago_22b");
-		//names.add("yago_21o");
-		//names.add("yago_21b");
+		//names.add("dbpedia_11b");
+		//names.add("dbpedia_21b");
+		//names.add("dbpedia_22b");
+		//names.add("dbpedia_21o");
+		names.add("yago_11b");
+		names.add("yago_22b");
+		names.add("yago_21o");
+		names.add("yago_21b");
 		PreTest pre = new PreTest();
 		SolveTest sol = new SolveTest();
 		//CheckAnswer che = new CheckAnswer();
